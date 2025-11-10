@@ -55,5 +55,29 @@ Koefisien korelasi (cor) = -0.6517322 (atau -0.652) (negatif). Artinya ada hubun
 
 # Syarat Multikolinieritas
 <p align="center">
-  <img src="Image/korelasi%20tpt%20vs%20tpak.png" width="300">
+  <img src="Image/syarat%20multiko.png" width="300">
 </p>
+Syarat multikolinearitas bertujuan untuk mengecek apakah dalam model regresi terdapat korelasi antar variabel independen. Salah satu cara yang digunakan untuk mendeteksi adanya multikolinearitas adalah mengecek nilai VIF. Hasil uji multikolinearitas diperoleh nilai VIF masing-masing variabel yaitu Penduduk (1,313), RLS (1,244), TPAK (1,587) < 5. Hal ini berarti tidak terjadi multikolineritas atau asumsi multikolinearitas terpenuhi.
+
+# Hasil Analisis Regresi Berganda
+Pengolahan dengan analisis Regreasi Berganda memperoleh hasil sebagai berikut.
+<p align="center">
+  <img src="Image/hasil%20analisis.png" width="300">
+</p>
+Berdasarkan hal tersebut, dapat diinterpretasikan hal-hal sebagai berikut.
+
+## Uji Overall (Uji F)
+Dari tabel diperoleh hasil uji signifikansi model secara keseluruhan:
+<ul>
+ <li><em>F-statistic</em>: 11.63</li>
+ <li><em>p-value</em>: 7.709e-05</li> 
+</ul>	
+
+Nilai *p-value* yang sangat kecil (7.709e-05), jauh di bawah tingkat signifikansi umum α = 0.05 menunjukkan bahwa hipotesis nol (H0) yang menyatakan semua koefisien variabel independen (Penduduk, RLS, TPAK) secara bersama-sama sama dengan nol ditolak. 
+
+Kesimpulannya: 
+Model secara statistik menyatakan bahwa setidaknya ada satu variabel independen (Penduduk, RLS, atau TPAK) yang berpengaruh secara signifikan terhadap variabel dependen TPT.
+
+## Uji Parsial (Uji t)
+Ini menguji pengaruh masing-masing variabel independen terhadap variabel dependen secara individu, dengan asumsi variabel lain konstan, dan α = 0.05.
+
