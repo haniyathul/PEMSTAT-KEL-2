@@ -36,4 +36,24 @@ Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provins
 
 # Uji Korelasi
 ## A. TPT vs Laju Pertumbuhan Penduduk
+<p align="center">
+  <img src="Image/korelasi%20tpt%20vs%20penduduk.png" width="300">
+</p>
+Koefisien korelasi (cor) = 0.6490519 (atau 0.649) (positif) Artinya ada hubungan searah antara Laju Pertumbuhan Penduduk dan TPT. Sifat hubungan positif menunjukkan bahwa jika nilai Penduduk meningkat, maka nilai TPT juga cenderung meningkat (begitu pula sebaliknya). Nilai korelasi sebesar 0.649 menunjukkan bahwa hubungan linear cukup kuat (atau sedang).
 
+## B. TPT vs RLS
+<p align="center">
+  <img src="Image/korelasi%20tpt%20vs%20rls.png" width="300">
+</p>
+Koefisien korelasi (cor) = 0.4209774 (atau 0.421) (positif). Artinya ada hubungan searah antara RLS dan TPT. Sifat hubungan positif menunjukkan bahwa jika nilai RLS meningkat, maka nilai TPT juga cenderung meningkat (begitu pula sebaliknya). Nilai korelasi sebesar 0.421 menunjukkan bahwa hubungan linear cukup lemah.
+
+## C. TPT vs TPAK
+<p align="center">
+  <img src="Image/korelasi%20tpt%20vs%20tpak.png" width="300">
+</p>
+Koefisien korelasi (cor) = -0.6517322 (atau -0.652) (negatif). Artinya ada hubungan berlawanan arah antara TPAK dan TPT. Sifat hubungan negatif menunjukkan bahwa jika nilai TPAK meningkat, maka nilai TPT juga cenderung menurun (begitu pula sebaliknya). Nilai korelasi sebesar 0.652 menunjukkan bahwa hubungan linear cukup kuat.
+
+# Syarat Multikolinieritas
+<p align="center">
+  <img src="Image/korelasi%20tpt%20vs%20tpak.png" width="300">
+</p>
