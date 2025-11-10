@@ -11,13 +11,23 @@ Untuk menganalisis hubungan antarvariabel tersebut, penelitian ini menggunakan p
 # Visualisasi Data
 
 ## 1. Barchart RLS
-![Barchart RLS](Image/Barchart%20RLS.png)
+<p align="center">
+  <img src="Image/Barchart%20RLS.png" width="500">
+</p>
+
 
 ## 2. Barchart TPAK
-![Barchart TPAK](Image/Barchart%20TPAK.png)
+<p align="center">
+  <img src="Image/Barchart%20TPAK.png" width="500">
+</p>
 
 ## 3. Barchart TPT
-![Barchart TPT](Image/Barchart%20TPT.png)
+<p align="center">
+  <img src="Image/Barchart%20TPT.png" width="500">
+</p>
 
 ## 4. Barchart Penduduk
-![Barchart Penduduk](Image/barchart%20penduduk.png)
+<p align="center">
+  <img src="Image/barchart%20penduduk.png" width="500">
+</p>
+
