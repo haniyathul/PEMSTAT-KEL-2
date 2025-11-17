@@ -1,6 +1,6 @@
 # 📈Analisis Faktor-Faktor yang Mempengaruhi Tingkat Kemiskinan di Jawa Barat Menurut Kabupaten/Kota Tahun 2024
 <p align="center">
-  <img class="banner" src="img/BANNER latar belakang.png"/>
+  <img class="banner" src="img/latar belakang.png"/>
 </p>
 
 # Latar Belakang
