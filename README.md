@@ -52,7 +52,7 @@ Grafik Rata-Rata Lama Sekolah (RLS) di berbagai Kabupaten/Kota di Jawa Barat, me
 </p>
 Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provinsi Jawa Barat, menunjukkan bahwa Kota Sukabumi, Kabupaten Bandung Barat, dan Kota Cimahi menempati posisi dengan laju pertumbuhan penduduk tertinggi dengan nilai pertumbuhan penduduk rata-rata 1,4%. Hal ini mungkin didorong oleh tingginya urbanisasi dan migrasi masuk seiring perkembangan wilayah tersebut menjadi pusat ekonomi. Sedangkan, daerah seperti Kabupaten Sumedang, Pangandaran, dan Ciamis berada pada posisi terbawah dengan laju pertumbuhan penduduk yang relatif rendah di bawah 1%.
 
-# Uji Asumsi
+# ⚙️Uji Asumsi
 ## 1. Uji Normalitas
 <p align="center">
   <img src="Image/QQ%20plot.jpg" width="500">
@@ -81,7 +81,7 @@ Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapa
 Uji heterosekedastisitas bertujuan untuk melihat apakah dalam model regresi terjadi ketidaksamaan varians dari residual satu pengamatan ke pengamatan yang lain. Jika varians dari nilai residual antar pengamatan tetap maka disebut homokedastis. Akan tetapi jika berbeda, maka disebut heteroskedastisitas. Model regresi yang baik adalah model yang bersifat homokedastis. Berdasarkan uji Breusch Pagan Godfrey diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4251) > 𝛼 (0.05). Hal ini berarti bahwa tidak terdapat indikasi heteroskedastisitas atau asumsi uji heteroskedastisitas sudah terpenuhi.
 
 
-# Hasil Analisis Regresi Berganda
+# 🎯Hasil Analisis Regresi Berganda
 Pengolahan dengan analisis Regreasi Berganda memperoleh hasil sebagai berikut.
 <p align="center">
   <img src="Image/Hasil%20Regresi.jpg" width="500">
@@ -140,7 +140,7 @@ $$
 Secara keseluruhan, model ini layak digunakan (signifikan) dan mampu menjelaskan 55.09% keragaman TPT. Variabel yang terbukti berpengaruh signifikan terhadap TPT adalah Penduduk (pengaruh positif) dan TPAK (pengaruh negatif). Variabel RLS tidak terbukti berpengaruh signifikan dalam model ini.
 
 
-# Hasil Uji Korelasi
+# 🔗Hasil Uji Korelasi
 
 ## 1. TPT vs Laju Pertumbuhan Penduduk
 <p align="center">
