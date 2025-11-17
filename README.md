@@ -1,6 +1,6 @@
 # 📈Analisis Faktor-Faktor yang Mempengaruhi Tingkat Kemiskinan di Jawa Barat Menurut Kabupaten/Kota Tahun 2024
 <p align="center">
-  <img src="Image/latar%20belakang.png" width="300">
+  <img class="banner" src="img/BANNER latar belakang.png"/>
 </p>
 
 # Latar Belakang
@@ -23,7 +23,7 @@ Untuk menganalisis hubungan antarvariabel tersebut, penelitian ini menggunakan p
 </ul>
 
 ## Variabel Respon (Y):
-Tingkat Kemiskinan (%)
+Tingkat Pengangguran Terbuka (%)
 
 # 📊Visualisasi Data
 
