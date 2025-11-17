@@ -9,7 +9,7 @@ Untuk menganalisis hubungan antarvariabel tersebut, penelitian ini menggunakan p
 
 # 📋Data dan Variabel
 <p align="center">
-  <img src="Image/logo%20bps.png" width="250">
+  <img src="Image/logo%20bps.png" width="200">
 </p>
 
 ## Variabel Prediktor (X):
@@ -21,7 +21,6 @@ Untuk menganalisis hubungan antarvariabel tersebut, penelitian ini menggunakan p
 
 ## Variabel Respon (Y):
 Tingkat Kemiskinan (%)
-
 
 # Visualisasi Data
 
