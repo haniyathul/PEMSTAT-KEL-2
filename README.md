@@ -144,19 +144,19 @@ Secara keseluruhan, model ini layak digunakan (signifikan) dan mampu menjelaskan
 
 ## 1. TPT vs Laju Pertumbuhan Penduduk
 <p align="center">
-  <img src="Image/Korelasi%20Penduduk%20dan%20TPT.jpg" width="300">
+  <img src="Image/Korelasi%20Penduduk%20dan%20TPT.jpg" width="400">
 </p>
 <ul> <li><strong>Koefisien Korelasi (cor) = 0.649 (positif)</strong><br> Artinya terdapat hubungan searah antara Penduduk dan TPT. <div style="margin-left:20px;"> &gt; Jika Penduduk meningkat, maka TPT juga cenderung meningkat.<br> &gt; Nilai korelasi 0.649 menunjukkan hubungan linear cukup kuat (atau sedang). </div> </li> <li><strong>p-value = 0.0002497 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear yang signifikan antara Penduduk dan TPT. </li> <li><strong>Selang Kepercayaan (95%) = 0.3571215 sampai 0.8254657</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
 
 ## 2. TPT vs RLS
 <p align="center">
-  <img src="Image/Korelasi%20RLS%20dan%20TPT.jpg" width="300">
+  <img src="Image/Korelasi%20RLS%20dan%20TPT.jpg" width="400">
 </p>
 <ul> <li><strong>Koefisien Korelasi (cor) = 0.421 (positif)</strong><br> Artinya terdapat hubungan searah antara RLS dan TPT. <div style="margin-left:20px;"> &gt; Jika RLS meningkat, maka TPT cenderung meningkat.<br> &gt; Nilai korelasi 0.421 menunjukkan hubungan linear yang lemah. </div> </li> <li><strong>p-value = 0.028767 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear signifikan antara RLS dan TPT. </li> <li><strong>Selang Kepercayaan (95%) = 0.049 sampai 0.691</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
 
 ## 3. TPT vs TPAK
 <p align="center">
-  <img src="Image/Korelasi%20TPAK%20dan%20TPT.jpg" width="300">
+  <img src="Image/Korelasi%20TPAK%20dan%20TPT.jpg" width="400">
 </p>
 <ul> <li><strong>Koefisien Korelasi (cor) = -0.652 (negatif)</strong><br> Artinya terdapat hubungan berlawanan arah antara TPAK dan TPT. <div style="margin-left:20px;"> &gt; Jika TPAK meningkat, maka TPT cenderung menurun.<br> &gt; Nilai korelasi -0.652 menunjukkan hubungan linear cukup kuat. </div> </li> <li><strong>p-value = 0.0002307 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear signifikan dan kuat. </li> <li><strong>Selang Kepercayaan (95%) = -0.8269401 sampai -0.3611676</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
 
