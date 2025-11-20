@@ -1,7 +1,7 @@
 # 📈Analisis Faktor-Faktor yang Mempengaruhi Tingkat Pengangguran Terbuka di Jawa Barat Menurut Kabupaten/Kota Tahun 2024
 
 <p align="center">
-  <img class="banner" src="Image/banner%20tpt.png"/>
+  <img class="banner" src="Image/banner%20tpt.jpg"/>
 </p>
 
 # Latar Belakang
