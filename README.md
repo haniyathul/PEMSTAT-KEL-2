@@ -1,10 +1,11 @@
-# 📈Analisis Faktor-Faktor yang Mempengaruhi Tingkat Pengangguran Terbuka di Jawa Barat Menurut Kabupaten/Kota Tahun 2024
-
 <p align="center">
   <img class="banner" src="Image/banner%20tpt.jpg"/>
 </p>
 
 # Latar Belakang
+<p align="center">
+  <img class="banner" src="Image/latar%20belakang.png"/>
+</p>
 Tingkat Pengangguran Terbuka (TPT) merupakan salah satu indikator utama yang mencerminkan kondisi ekonomi dan ketenagakerjaan di suatu daerah. Di Provinsi Jawa Barat, angka TPT cenderung lebih tinggi dibandingkan provinsi lain di Indonesia menurut data BPS. Kondisi ini menunjukkan adanya ketidakseimbangan antara pertumbuhan penduduk, ketersediaan lapangan kerja, serta kualitas tenaga kerja. Oleh karena itu, penting dilakukan analisis untuk mengetahui faktor-faktor yang memengaruhi tingkat pengangguran terbuka di provinsi ini.
 
 Beberapa variabel yang diperkirakan berpengaruh terhadap TPT antara lain laju pertumbuhan penduduk, rata-rata lama sekolah, dan tingkat partisipasi angkatan kerja (TPAK). Pertumbuhan penduduk yang cepat dapat meningkatkan jumlah pencari kerja, sementara pendidikan (lama sekolah) diharapkan menurunkan pengangguran dengan meningkatkan kualitas tenaga kerja. Di sisi lain, TPAK yang tinggi menunjukkan semakin banyak penduduk usia kerja yang aktif di pasar tenaga kerja, yang bisa berdampak positif maupun negatif terhadap tingkat pengangguran tergantung pada kemampuan penyerapan kerja.
