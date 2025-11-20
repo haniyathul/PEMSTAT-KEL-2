@@ -61,7 +61,7 @@ Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provins
 Uji normalitas berfungsi untuk menguji apakah nilai residual dalam model regresi memiliki distribusi normal atau tidak. Berdasarkan plot Normal Q-Q, dapat diketahui bahwa mayoritas sebaran data berada di sekitar garis lurus yang mengindikasikan bahwa data tersebut berdistribusi normal. Meskipun demikian analisis visual bersifat subjektif, maka diperlukan uji statistik seperti Shapiro-Wilk untuk memperoleh kesimpulan yang lebih objektif.
 
 <p align="center">
-  <img src="Image/Shapiro%20tes.jpg" width="300">
+  <img src="Image/Shapiro%20tes.jpg" width="280">
 </p>
 
 Pengujian normalitas dilakukan menggunakan Shapiro – Wilk karena jumlah data yang digunakan dalam penelitian ini adalah < 50. Berdasarkan hasil uji tersebut diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4881) > 𝛼 (0.05). Hal ini berarti bawa residual menyebar normal dan asumsi normalitas terpenuhi.
@@ -69,7 +69,7 @@ Pengujian normalitas dilakukan menggunakan Shapiro – Wilk karena jumlah data y
 ## 2. Uji Multikolinearitas
 
 <p align="center">
-  <img src="Image/VIF.jpg" width="200">
+  <img src="Image/VIF.jpg" width="225">
 </p>
 Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapat korelasi antar variabel independen. Salah satu cara yang digunakan untuk mendeteksi adanya multikolinearitas adalah mengecek nilai VIF. Hasil uji multikolinearitas diperoleh nilai VIF masing-masing variabel yaitu Penduduk (1,313), RLS (1,244), TPAK (1,587) < 5. Hal ini berarti tidak terjadi multikolineritas atau asumsi multikolinearitas terpenuhi.
 
@@ -84,7 +84,7 @@ Uji heterosekedastisitas bertujuan untuk melihat apakah dalam model regresi terj
 # 🎯Hasil Analisis Regresi Berganda
 Pengolahan dengan analisis Regreasi Berganda memperoleh hasil sebagai berikut.
 <p align="center">
-  <img src="Image/Hasil%20Regresi.jpg" width="500">
+  <img src="Image/Hasil%20Regresi.jpg" width="450">
 </p>
 Berdasarkan hal tersebut, dapat diinterpretasikan hal-hal sebagai berikut.
 
