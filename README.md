@@ -1,5 +1,5 @@
 <p align="center">
-  <img class="banner" src="Image/banner%20tpt.jpg"/>
+  <img class="banner" src="Image/Banner%20Tingkat%20Pengangguran%20Terbuka.jpg"/>
 </p>
 
 # Latar Belakang
