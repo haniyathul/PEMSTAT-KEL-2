@@ -69,7 +69,7 @@ Pengujian normalitas dilakukan menggunakan Shapiro – Wilk karena jumlah data y
 ## 2. Uji Multikolinearitas
 
 <p align="center">
-  <img src="Image/VIF.jpg" width="300">
+  <img src="Image/VIF.jpg" width="200">
 </p>
 Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapat korelasi antar variabel independen. Salah satu cara yang digunakan untuk mendeteksi adanya multikolinearitas adalah mengecek nilai VIF. Hasil uji multikolinearitas diperoleh nilai VIF masing-masing variabel yaitu Penduduk (1,313), RLS (1,244), TPAK (1,587) < 5. Hal ini berarti tidak terjadi multikolineritas atau asumsi multikolinearitas terpenuhi.
 
