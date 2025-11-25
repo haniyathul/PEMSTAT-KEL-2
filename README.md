@@ -124,7 +124,7 @@ Model secara statistik menyatakan bahwa setidaknya ada satu variabel independen 
 ## 2. Uji Parsial (Uji t)
 Ini menguji pengaruh masing-masing variabel independen terhadap variabel dependen secara individu, dengan asumsi variabel lain konstan, dan α = 0.05.
 <p align="center">
-  <img src="Image/Hasil%20Regresi.jpg" width="300">
+  <img src="Image/P-value%20plot.png" width="300">
 </p>
 a.	Variabel: Penduduk
 <ul>
