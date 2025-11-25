@@ -53,6 +53,26 @@ Grafik Rata-Rata Lama Sekolah (RLS) di berbagai Kabupaten/Kota di Jawa Barat, me
 </p>
 Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provinsi Jawa Barat, menunjukkan bahwa Kota Sukabumi, Kabupaten Bandung Barat, dan Kota Cimahi menempati posisi dengan laju pertumbuhan penduduk tertinggi dengan nilai pertumbuhan penduduk rata-rata 1,4%. Hal ini mungkin didorong oleh tingginya urbanisasi dan migrasi masuk seiring perkembangan wilayah tersebut menjadi pusat ekonomi. Sedangkan, daerah seperti Kabupaten Sumedang, Pangandaran, dan Ciamis berada pada posisi terbawah dengan laju pertumbuhan penduduk yang relatif rendah di bawah 1%.
 
+# 🔗Hasil Uji Korelasi
+
+## 1. TPT vs Laju Pertumbuhan Penduduk
+<p align="center">
+  <img src="Image/Korelasi%20Penduduk%20dan%20TPT.jpg" width="400">
+</p>
+<ul> <li><strong>Koefisien Korelasi (cor) = 0.649 (positif)</strong><br> Artinya terdapat hubungan searah antara Penduduk dan TPT. <div style="margin-left:20px;"> &gt; Jika Penduduk meningkat, maka TPT juga cenderung meningkat.<br> &gt; Nilai korelasi 0.649 menunjukkan hubungan linear cukup kuat (atau sedang). </div> </li> <li><strong>p-value = 0.0002497 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear yang signifikan antara Penduduk dan TPT. </li> <li><strong>Selang Kepercayaan (95%) = 0.3571215 sampai 0.8254657</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
+
+## 2. TPT vs RLS
+<p align="center">
+  <img src="Image/Korelasi%20RLS%20dan%20TPT.jpg" width="400">
+</p>
+<ul> <li><strong>Koefisien Korelasi (cor) = 0.421 (positif)</strong><br> Artinya terdapat hubungan searah antara RLS dan TPT. <div style="margin-left:20px;"> &gt; Jika RLS meningkat, maka TPT cenderung meningkat.<br> &gt; Nilai korelasi 0.421 menunjukkan hubungan linear yang lemah. </div> </li> <li><strong>p-value = 0.028767 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear signifikan antara RLS dan TPT. </li> <li><strong>Selang Kepercayaan (95%) = 0.049 sampai 0.691</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
+
+## 3. TPT vs TPAK
+<p align="center">
+  <img src="Image/Korelasi%20TPAK%20dan%20TPT.jpg" width="400">
+</p>
+<ul> <li><strong>Koefisien Korelasi (cor) = -0.652 (negatif)</strong><br> Artinya terdapat hubungan berlawanan arah antara TPAK dan TPT. <div style="margin-left:20px;"> &gt; Jika TPAK meningkat, maka TPT cenderung menurun.<br> &gt; Nilai korelasi -0.652 menunjukkan hubungan linear cukup kuat. </div> </li> <li><strong>p-value = 0.0002307 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear signifikan dan kuat. </li> <li><strong>Selang Kepercayaan (95%) = -0.8269401 sampai -0.3611676</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
+
 # ⚙️Uji Asumsi
 ## 1. Uji Normalitas
 <p align="center">
@@ -103,7 +123,9 @@ Model secara statistik menyatakan bahwa setidaknya ada satu variabel independen 
 
 ## 2. Uji Parsial (Uji t)
 Ini menguji pengaruh masing-masing variabel independen terhadap variabel dependen secara individu, dengan asumsi variabel lain konstan, dan α = 0.05.
-
+<p align="center">
+  <img src="Image/Hasil%20Regresi.jpg" width="300">
+</p>
 a.	Variabel: Penduduk
 <ul>
  <li><em>Estimasi Koefisien</em>: 3.22454</li>
@@ -139,27 +161,6 @@ $$
 $$
 
 Secara keseluruhan, model ini layak digunakan (signifikan) dan mampu menjelaskan 55.09% keragaman TPT. Variabel yang terbukti berpengaruh signifikan terhadap TPT adalah Penduduk (pengaruh positif) dan TPAK (pengaruh negatif). Variabel RLS tidak terbukti berpengaruh signifikan dalam model ini.
-
-
-# 🔗Hasil Uji Korelasi
-
-## 1. TPT vs Laju Pertumbuhan Penduduk
-<p align="center">
-  <img src="Image/Korelasi%20Penduduk%20dan%20TPT.jpg" width="400">
-</p>
-<ul> <li><strong>Koefisien Korelasi (cor) = 0.649 (positif)</strong><br> Artinya terdapat hubungan searah antara Penduduk dan TPT. <div style="margin-left:20px;"> &gt; Jika Penduduk meningkat, maka TPT juga cenderung meningkat.<br> &gt; Nilai korelasi 0.649 menunjukkan hubungan linear cukup kuat (atau sedang). </div> </li> <li><strong>p-value = 0.0002497 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear yang signifikan antara Penduduk dan TPT. </li> <li><strong>Selang Kepercayaan (95%) = 0.3571215 sampai 0.8254657</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
-
-## 2. TPT vs RLS
-<p align="center">
-  <img src="Image/Korelasi%20RLS%20dan%20TPT.jpg" width="400">
-</p>
-<ul> <li><strong>Koefisien Korelasi (cor) = 0.421 (positif)</strong><br> Artinya terdapat hubungan searah antara RLS dan TPT. <div style="margin-left:20px;"> &gt; Jika RLS meningkat, maka TPT cenderung meningkat.<br> &gt; Nilai korelasi 0.421 menunjukkan hubungan linear yang lemah. </div> </li> <li><strong>p-value = 0.028767 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear signifikan antara RLS dan TPT. </li> <li><strong>Selang Kepercayaan (95%) = 0.049 sampai 0.691</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
-
-## 3. TPT vs TPAK
-<p align="center">
-  <img src="Image/Korelasi%20TPAK%20dan%20TPT.jpg" width="400">
-</p>
-<ul> <li><strong>Koefisien Korelasi (cor) = -0.652 (negatif)</strong><br> Artinya terdapat hubungan berlawanan arah antara TPAK dan TPT. <div style="margin-left:20px;"> &gt; Jika TPAK meningkat, maka TPT cenderung menurun.<br> &gt; Nilai korelasi -0.652 menunjukkan hubungan linear cukup kuat. </div> </li> <li><strong>p-value = 0.0002307 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear signifikan dan kuat. </li> <li><strong>Selang Kepercayaan (95%) = -0.8269401 sampai -0.3611676</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
 
 ## 4. Kesimpulan
 <ul> <li>Ketiga variabel (Penduduk, RLS, TPAK) memiliki hubungan linear yang signifikan terhadap TPT.</li> <li>Hubungan terkuat: <ul> <li>TPAK → TPT (korelasi negatif kuat)</li> <li>Penduduk → TPT (korelasi positif kuat)</li> </ul> </li> <li>Variabel RLS memiliki hubungan yang lebih lemah dibanding dua variabel lain.</li> </ul>
