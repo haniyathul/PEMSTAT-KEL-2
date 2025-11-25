@@ -17,10 +17,6 @@ resid_std <- rstandard(regresi)
 shapiro.test(resid_std)
 qqnorm(resid_std); qqline(resid_std, col="blue", lwd=2)
 
-model <- lm(log(TPT) ~ log(Penduduk) + log(RLS) + log(TPAK), data = pemro)
-summary(model)
-qqnorm(residual_std); qqline(residual_std, col="blue", lwd=2)
-
 #uji multikolinieritas
 library(car)
 vif(regresi)
@@ -35,20 +31,21 @@ library(ggplot2)
 library(viridis)
 library(forcats)
 
-#Barchart TPT
-ggplot(pemro, aes(x = TPT, y = fct_reorder(Kab.Kota, TPT, .desc = FALSE),, fill = TPT)) +
+# Barchart TPT
+ggplot(pemro, aes(x = TPT, 
+                  y = fct_reorder(Kab.Kota, TPT, .desc = FALSE), 
+                  fill = TPT)) +
   geom_bar(stat = "identity", width = 0.7) +
-  scale_fill_viridis_c(option = "viridis", 
-                       name = "TPT")+
+  scale_fill_gradient(low = "red", high = "green", name = "TPT") +
   labs(title = "Tingkat Pengangguran Terbuka",
        x = "Average TPT",
-       y = "Kab/Kota di Indonesia")
-theme_minimal(base_size = 12) +
+       y = "Kab/Kota di Indonesia") +
+  theme_minimal(base_size = 12) +
   theme(
     plot.title = element_text(hjust = 0.5, face = "bold", size = 13),
     axis.title.y = element_text(face = "bold"),
     axis.title.x = element_text(face = "bold"),
-    legend.position = "none"
+    legend.position = "right"     # ← Legend muncul di kanan
   )
 
 #Barchart RLS
@@ -67,21 +64,22 @@ theme_minimal(base_size = 12) +
     legend.position = "none"
   )
 
-#Barchart TPAK
-ggplot(pemro, aes(x = TPAK, y = fct_reorder(Kab.Kota, TPAK, .desc = FALSE),, fill = TPAK)) +
+# Barchart TPAK
+ggplot(pemro, aes(x = TPAK, 
+                  y = fct_reorder(Kab.Kota, TPAK, .desc = FALSE), 
+                  fill = TPAK)) +
   geom_bar(stat = "identity", width = 0.7) +
-  scale_fill_viridis_c(option = "cividis", 
-                       name = "TPAK")+
+  scale_fill_viridis_c(option = "viridis", name = "TPAK") +
   labs(title = "Tingkat Partisipasi Angkatan Kerja",
        x = "Average TPAK",
-       y = "Kab/Kota di Indonesia")
-theme_minimal(base_size = 12) +
+       y = "Kab/Kota di Indonesia") +
+  theme_minimal(base_size = 12) +
   theme(
     plot.title = element_text(hjust = 0.5, face = "bold", size = 13),
     axis.title.y = element_text(face = "bold"),
-    axis.title.x = element_text(face = "bold"),
-    legend.position = "none"
-  )
+    axis.title.x = element_text(face = "bold")
+  ) +
+  coord_cartesian(xlim = c(60, 80))
 
 #Barchart Laju Pertumbuhan Penduduk
 ggplot(pemro, aes(x = Penduduk, y = fct_reorder(Kab.Kota, Penduduk, .desc = FALSE),, fill = Penduduk)) +
@@ -98,3 +96,4 @@ theme_minimal(base_size = 12) +
     axis.title.x = element_text(face = "bold"),
     legend.position = "none"
   )
+
