@@ -47,9 +47,9 @@ Berdasarkan grafik Tingkat Partisipasi Angkatan Kerja (TPAK) di Kabupaten/Kota J
 </p>
 Grafik Rata-Rata Lama Sekolah (RLS) di berbagai Kabupaten/Kota di Jawa Barat, menunjukkan bahwa kota-kota besar dan metropolitan seperti Kota Bekasi, Kota Depok, dan Kota Cimahi menempati posisi teratas dengan RLS tertinggi rata-rata 11 tahun. Hal ini mengindikasikan bahwa rata-rata penduduk di daerah tersebut telah menempuh pendidikan setara SMA atau lebih. Sebaliknya, wilayah-wilayah seperti Kabupaten Subang, Sukabumi dan Indramayu berada di posisi terbawah dengan RLS lebih rendah yaitu di bawah 8.0 tahun yang mengindikasikan bahwa rata-rata penduduknya hanya memiliki pendidikan setara SMP atau di bawahnya.
 
-## 4. Barchart Penduduk
+## 4. Barchart Laju Pertumbuhan Penduduk
 <p align="center">
-  <img src="Image/barchart%20penduduk.png" width="500">
+  <img src="Image/Barchart%20Laju%20Pertumbuhan.png" width="500">
 </p>
 Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provinsi Jawa Barat, menunjukkan bahwa Kota Sukabumi, Kabupaten Bandung Barat, dan Kota Cimahi menempati posisi dengan laju pertumbuhan penduduk tertinggi dengan nilai pertumbuhan penduduk rata-rata 1,4%. Hal ini mungkin didorong oleh tingginya urbanisasi dan migrasi masuk seiring perkembangan wilayah tersebut menjadi pusat ekonomi. Sedangkan, daerah seperti Kabupaten Sumedang, Pangandaran, dan Ciamis berada pada posisi terbawah dengan laju pertumbuhan penduduk yang relatif rendah di bawah 1%.
 
@@ -76,13 +76,13 @@ Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provins
 # ⚙️Uji Asumsi
 ## 1. Uji Normalitas
 <p align="center">
-  <img src="Image/QQ%20plot.jpg" width="500">
+  <img src="Image/Normal%20Plot.png" width="350">
 </p>
 
 Uji normalitas berfungsi untuk menguji apakah nilai residual dalam model regresi memiliki distribusi normal atau tidak. Berdasarkan plot Normal Q-Q, dapat diketahui bahwa mayoritas sebaran data berada di sekitar garis lurus yang mengindikasikan bahwa data tersebut berdistribusi normal. Meskipun demikian analisis visual bersifat subjektif, maka diperlukan uji statistik seperti Shapiro-Wilk untuk memperoleh kesimpulan yang lebih objektif.
 
 <p align="center">
-  <img src="Image/Shapiro%20tes.jpg" width="280">
+  <img src="Image/Uji%20Normalitas.jpg" width="280">
 </p>
 
 Pengujian normalitas dilakukan menggunakan Shapiro – Wilk karena jumlah data yang digunakan dalam penelitian ini adalah < 50. Berdasarkan hasil uji tersebut diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4881) > 𝛼 (0.05). Hal ini berarti bawa residual menyebar normal dan asumsi normalitas terpenuhi.
@@ -124,34 +124,18 @@ Model secara statistik menyatakan bahwa setidaknya ada satu variabel independen 
 ## 2. Uji Parsial (Uji t)
 Ini menguji pengaruh masing-masing variabel independen terhadap variabel dependen secara individu, dengan asumsi variabel lain konstan, dan α = 0.05.
 <p align="center">
-  <img src="Image/Pvalue%20plot.png" width="300">
+  <img src="Image/Uji%20Parsial.png" width="400">
 </p>
 a.	Variabel: Penduduk
-<ul>
- <li><em>Estimasi Koefisien</em>: 3.22454</li>
- <li><em>	p-value</em>:  0.00643 </li> 
-</ul>	
-p-value (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT.
-•	Artinya: 
-Jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 unit pada Penduduk akan meningkatkan TPT sebesar 3.22454 unit.
+<br> p-value (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT. Artinya, jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 unit pada Penduduk akan meningkatkan TPT sebesar 3.22454 unit. <br>
 
+<br>
 b.	Variabel: RLS
-<ul>
- <li><em>Estimasi Koefisien</em>: 0.25801</li>
- <li><em>	p-value</em>:  0.18278 </li> 
-</ul>	 
-p-value (0.18278) > 0.05 ➜ variabel RLS berpengaruh tidak signifikan terhadap TPT.
-•	Artinya: 
-Tidak ada bukti statistik yang cukup untuk menyatakan bahwa RLS memiliki pengaruh terhadap TPT dalam model ini.
+<br> p-value (0.18278) > 0.05 ➜ variabel RLS berpengaruh tidak signifikan terhadap TPT. Artinya, tidak ada bukti statistik yang cukup untuk menyatakan bahwa RLS memiliki pengaruh terhadap TPT dalam model ini. <br>
 
+<br>
 c.	Variabel: TPAK
-<ul>
- <li><em>Estimasi Koefisien</em>: -0.17110</li>
- <li><em>	p-value</em>:  0.04839 </li> 
-</ul>	 
-p-value (0.04839) < 0.05 ➜ variabel TPAK berpengaruh negatif dan signifikan terhadap TPT.
-•	Artinya: 
-Jika variabel Penduduk dan RLS konstan, maka setiap kenaikan 1 unit pada TPAK akan menurunkan TPT sebesar 0.17110 unit.
+<br> p-value (0.04839) < 0.05 ➜ variabel TPAK berpengaruh negatif dan signifikan terhadap TPT. Artinya, jika variabel Penduduk dan RLS konstan, maka setiap kenaikan 1 unit pada TPAK akan menurunkan TPT sebesar 0.17110 unit. <br>
 
 ## 	3. Persamaan Model Regresi
 Berdasarkan nilai Estimate tersebut, maka persamaan regresi yang terbentuk adalah:
