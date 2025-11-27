@@ -181,14 +181,14 @@ Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provins
 </p>
 <p align="center"><i>Gambar 8. Plot Normal Q-Q . </i></p>
 
-Uji normalitas berfungsi untuk menguji apakah nilai residual dalam model regresi memiliki distribusi normal atau tidak. Berdasarkan plot Normal Q-Q, dapat diketahui bahwa mayoritas sebaran data berada di sekitar garis lurus yang mengindikasikan bahwa data tersebut berdistribusi normal. Meskipun demikian analisis visual bersifat subjektif, maka diperlukan uji statistik seperti Shapiro-Wilk untuk memperoleh kesimpulan yang lebih objektif.
+Uji normalitas berfungsi untuk menguji apakah nilai residual dalam model regresi memiliki distribusi normal atau tidak. Berdasarkan plot Normal Q-Q, dapat diketahui bahwa mayoritas sebaran data berada di sekitar garis lurus yang mengindikasikan bahwa data tersebut berdistribusi normal. Meskipun demikian analisis visual bersifat subjektif, maka diperlukan uji statistik seperti <i>Shapiro-Wilk</i> untuk memperoleh kesimpulan yang lebih objektif.
 
 <p align="center">
   <img src="Image/Uji%20Normalitas.jpg" width="280">
 </p>
 <p align="center"><i>Gambar 9. Hasil Uji Normalitas. </i></p>
 
-Pengujian normalitas dilakukan menggunakan Shapiro – Wilk karena jumlah data yang digunakan dalam penelitian ini adalah < 50. Berdasarkan hasil uji tersebut diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4881) > 𝛼 (0.05). Hal ini berarti bawa residual menyebar normal dan asumsi normalitas terpenuhi.
+Pengujian normalitas dilakukan menggunakan <i>Shapiro – Wilk</i> karena jumlah data yang digunakan dalam penelitian ini adalah < 50. Berdasarkan hasil uji tersebut diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4613) > 𝛼 (0.05). Hal ini berarti bawa residual menyebar normal dan asumsi normalitas terpenuhi.
 
 ## 2. Uji Multikolinearitas
 
@@ -197,7 +197,7 @@ Pengujian normalitas dilakukan menggunakan Shapiro – Wilk karena jumlah data y
 </p>
 <p align="center"><i>Gambar 10. Hasil Uji multikolinearitas. </i></p>
 
-Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapat korelasi antar variabel independen. Salah satu cara yang digunakan untuk mendeteksi adanya multikolinearitas adalah mengecek nilai VIF. Hasil uji multikolinearitas diperoleh nilai VIF masing-masing variabel yaitu Penduduk (1,313), RLS (1,244), TPAK (1,587) < 5. Hal ini berarti tidak terjadi multikolineritas atau asumsi multikolinearitas terpenuhi.
+Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapat korelasi antar variabel independen. Salah satu cara yang digunakan untuk mendeteksi adanya multikolinearitas adalah mengecek nilai VIF. Hasil uji multikolinearitas diperoleh nilai VIF masing-masing variabel yaitu Penduduk (1.313), RLS (1.244), TPAK (1.587) < 5. Hal ini berarti tidak terjadi multikolineritas atau asumsi multikolinearitas terpenuhi.
 
 ## 3. Uji Heteroskedastisitas
 
@@ -206,7 +206,7 @@ Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapa
 </p>
 <p align="center"><i>Gambar 11. Hasil Uji Heteroskedastisitas </i></p>
 
-Uji heterosekedastisitas bertujuan untuk melihat apakah dalam model regresi terjadi ketidaksamaan varians dari residual satu pengamatan ke pengamatan yang lain. Jika varians dari nilai residual antar pengamatan tetap maka disebut homokedastis. Akan tetapi jika berbeda, maka disebut heteroskedastisitas. Model regresi yang baik adalah model yang bersifat homokedastis. Berdasarkan uji Breusch Pagan Godfrey diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4251) > 𝛼 (0.05). Hal ini berarti bahwa tidak terdapat indikasi heteroskedastisitas atau asumsi uji heteroskedastisitas sudah terpenuhi.
+Uji heterosekedastisitas bertujuan untuk melihat apakah dalam model regresi terjadi ketidaksamaan varians dari residual satu pengamatan ke pengamatan yang lain. Jika varians dari nilai residual antar pengamatan tetap maka disebut homokedastis. Akan tetapi jika berbeda, maka disebut heteroskedastisitas. Model regresi yang baik adalah model yang bersifat homokedastis. Berdasarkan uji <i>Breusch Pagan Godfrey</i> diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4251) > 𝛼 (0.05). Hal ini berarti bahwa tidak terdapat indikasi heteroskedastisitas atau asumsi uji heteroskedastisitas sudah terpenuhi.
 
 ---
 # 📈Hasil Analisis Regresi Berganda
@@ -221,13 +221,13 @@ Berdasarkan hal tersebut, dapat diinterpretasikan hal-hal sebagai berikut.
 Dari tabel diperoleh hasil uji signifikansi model secara keseluruhan:
 <ul>
  <li><em>F-statistic</em>: 11.63</li>
- <li><em>p-value</em>: 7.709e-05</li> 
+ <li><em><i>p-value</i></em>: 7.709e-05</li> 
 </ul>	
 
-Nilai *p-value* yang sangat kecil (7.709e-05), jauh di bawah tingkat signifikansi umum α = 0.05 menunjukkan bahwa hipotesis nol (H0) yang menyatakan semua koefisien variabel independen (Penduduk, RLS, TPAK) secara bersama-sama sama dengan nol ditolak. 
+Nilai *p-value* yang sangat kecil (7.709e-05), jauh di bawah tingkat signifikansi umum α = 0.05 menunjukkan bahwa hipotesis nol (H0) yang menyatakan semua koefisien variabel independen (Laju Pertumbuhan Penduduk, RLS, TPAK) secara bersama-sama sama dengan nol ditolak. 
 
 Kesimpulannya: 
-Model secara statistik menyatakan bahwa setidaknya ada satu variabel independen (Penduduk, RLS, atau TPAK) yang berpengaruh secara signifikan terhadap variabel dependen TPT.
+Model secara statistik menyatakan bahwa setidaknya ada satu variabel independen (Laju Pertumbuhan Penduduk, RLS, atau TPAK) yang berpengaruh secara signifikan terhadap variabel dependen TPT.
 
 ## 2. Uji Parsial (Uji t)
 Ini menguji pengaruh masing-masing variabel independen terhadap variabel dependen secara individu, dengan asumsi variabel lain konstan, dan α = 0.05.
@@ -235,16 +235,15 @@ Ini menguji pengaruh masing-masing variabel independen terhadap variabel depende
   <img src="Image/Uji%20Parsial.png" width="400">
 </p>
 <p align="center"><i>Gambar 13. Plot P-Value Uji Parsial . </i></p>
-a.	Variabel: Penduduk
-<br> p-value (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT. Artinya, jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 unit pada Penduduk akan meningkatkan TPT sebesar 3.22454 unit. <br>
 
-<br>
-b.	Variabel: RLS
-<br> p-value (0.18278) > 0.05 ➜ variabel RLS berpengaruh tidak signifikan terhadap TPT. Artinya, tidak ada bukti statistik yang cukup untuk menyatakan bahwa RLS memiliki pengaruh terhadap TPT dalam model ini. <br>
+### a.	Variabel: Penduduk
+<i>p-value</i> (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT. Artinya, jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 unit pada Penduduk akan meningkatkan TPT sebesar 3.22454 unit.
 
-<br>
-c.	Variabel: TPAK
-<br> p-value (0.04839) < 0.05 ➜ variabel TPAK berpengaruh negatif dan signifikan terhadap TPT. Artinya, jika variabel Penduduk dan RLS konstan, maka setiap kenaikan 1 unit pada TPAK akan menurunkan TPT sebesar 0.17110 unit. <br>
+### b.	Variabel: RLS
+<i>p-value</i> (0.18278) > 0.05 ➜ variabel RLS berpengaruh tidak signifikan terhadap TPT. Artinya, tidak ada bukti statistik yang cukup untuk menyatakan bahwa RLS memiliki pengaruh terhadap TPT dalam model ini.
+
+### c.	Variabel: TPAK
+<i>p-value</i> (0.04839) < 0.05 ➜ variabel TPAK berpengaruh negatif dan signifikan terhadap TPT. Artinya, jika variabel Penduduk dan RLS konstan, maka setiap kenaikan 1 unit pada TPAK akan menurunkan TPT sebesar 0.17110 unit.
 
 ## 	3. Persamaan Model Regresi
 Berdasarkan nilai Estimate tersebut, maka persamaan regresi yang terbentuk adalah:
@@ -253,12 +252,16 @@ $$
 \text{TPT} = 12.22880 + 3.22454 \cdot \text{Penduduk} + 0.25801 \cdot \text{RLS} - 0.17110 \cdot \text{TPAK}
 $$
 
-Secara keseluruhan, model ini layak digunakan (signifikan) dan mampu menjelaskan 55.09% keragaman TPT. Variabel yang terbukti berpengaruh signifikan terhadap TPT adalah Penduduk (pengaruh positif) dan TPAK (pengaruh negatif). Variabel RLS tidak terbukti berpengaruh signifikan dalam model ini.
-
 ## 	4. Koefisien Determimnasi
+Nilai koefisien determinasi (**R²**) yang diperoleh adalah **55.09%**.
 
+**Artinya:**
 
+- Model regresi mampu menjelaskan **55.09% variasi** pada **Tingkat Pengangguran Terbuka (TPT)** berdasarkan variabel **Laju Pertumbuhan Penduduk**, **Rata-Rata Lama Sekolah (RLS)**, dan **Tingkat Partisipasi Angkatan Kerja (TPAK)**.
 
+- Sisanya, yaitu **44.91%**, dipengaruhi oleh faktor lain.
+
+---
 # 📝Kesimpulan
 1. Variabel Penduduk, RLS, dan TPAK memiliki hubungan linear dengan TPT, di mana Penduduk berpengaruh positif dan signifikan, TPAK berpengaruh negatif dan signifikan, sedangkan RLS memiliki pengaruh lebih lemah.
 2. Variabel yang paling signifikan memengaruhi TPT adalah Laju Pertumbuhan Penduduk dan TPAK. RLS tidak menjadi faktor dominan. Hal ini mengindikasikan bahwa kebijakan penurunan TPT dapat difokuskan pada peningkatan partisipasi tenaga kerja dan pengelolaan pertumbuhan penduduk.
