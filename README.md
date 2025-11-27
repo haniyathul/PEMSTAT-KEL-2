@@ -5,7 +5,7 @@
 ---
 # 🧩Latar Belakang
 <p align="center">
-  <img class="banner" src="Image/latar%20belakang.png"/>
+  <img class="banner" src="Image/TPT%20Pulau%20Jawa.jpg"/>
 </p>
 Tingkat Pengangguran Terbuka (TPT) merupakan salah satu indikator utama yang mencerminkan kondisi ekonomi dan ketenagakerjaan di suatu daerah. Di Provinsi Jawa Barat, angka TPT cenderung lebih tinggi dibandingkan provinsi lain di Indonesia menurut data BPS. Kondisi ini menunjukkan adanya ketidakseimbangan antara pertumbuhan penduduk, ketersediaan lapangan kerja, serta kualitas tenaga kerja. Oleh karena itu, penting dilakukan analisis untuk mengetahui faktor-faktor yang memengaruhi tingkat pengangguran terbuka di provinsi ini.
 
@@ -80,6 +80,10 @@ sebagai variabel prediktor.
 
 ### 7. Hasil Analisis
 Menyimpulkan temuan utama dan evaluasi model (R²).
+
+---
+# 🗂️Struktur Proyek
+
 
 ---
 # 📊Visualisasi Data
