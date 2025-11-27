@@ -2,7 +2,8 @@
   <img class="banner" src="Image/Banner%20Tingkat%20Pengangguran%20Terbuka.jpg"/>
 </p>
 
-# Latar Belakang
+---
+# 🧩Latar Belakang
 <p align="center">
   <img class="banner" src="Image/latar%20belakang.png"/>
 </p>
@@ -12,6 +13,16 @@ Beberapa variabel yang diperkirakan berpengaruh terhadap TPT antara lain laju pe
 
 Untuk menganalisis hubungan antarvariabel tersebut, penelitian ini menggunakan pendekatan regresi linier dengan bantuan perangkat lunak R. Pendekatan ini didasarkan pada buku “Introduction to Machine Learning Using R: Konsep, Teori, dan Praktik” karya Lukmanul Hakim dan Asep Saefuddin (2022), yang menjelaskan penerapan konsep machine learning dasar dalam pemodelan regresi menggunakan R. Buku tersebut menekankan pentingnya pemrosesan data, validasi model, serta interpretasi hasil secara komputasional dan statistikal untuk mendukung analisis kuantitatif berbasis data dalam penelitian sosial ekonomi.
 
+---
+# 🎯Tujuan Penelitian
+
+Tujuan dari penelitian ini adalah sebagai berikut:
+
+1. **Menganalisis pengaruh Laju Pertumbuhan Penduduk, Rata-Rata Lama Sekolah, dan Tingkat Partisipasi Angkatan Kerja terhadap Tingkat Pengangguran Terbuka.**
+  
+2. **Mengidentifikasi variabel yang memiliki pengaruh paling signifikan.** 
+
+---
 # 📋Sumber Data dan Variabel
 <p align="center">
   <img src="Image/logo%20bps.png" width="200">
@@ -27,63 +38,125 @@ Untuk menganalisis hubungan antarvariabel tersebut, penelitian ini menggunakan p
 ## Variabel Respon (Y):
 Tingkat Pengangguran Terbuka (%)
 
+---
+# 🧭 Tahapan Analisis
+
+Tahapan analisis yang dilakukan dalam penelitian ini adalah sebagai berikut:
+
+### 1. Pengumpulan Data
+Data diambil dari publikasi Badan Pusat Statistik (BPS) Provinsi Jawa Barat, mencakup variabel:
+- Tingkat Pengangguran Terbuka (TPT)
+- Tingkat Partisipasi Angkatan Kerja (TPAK)
+- Laju Pertumbuhan Penduduk
+- Rata-Rata Lama Sekolah (RLS)
+
+### 2. Eksplorasi Data Awal
+- Melihat statistik deskriptif dari setiap variabel
+- Mengidentifikasi pola awal melalui grafik barchart TPT, TPAK, RLS, dan Pertumbuhan Penduduk
+- Mengamati wilayah dengan nilai ekstrem (tertinggi/terendah)
+
+### 3. Analisis Korelasi
+- Menghitung korelasi Pearson antar variabel
+- Menginterpretasikan arah dan kekuatan hubungan
+- Menentukan variabel dengan potensi pengaruh paling kuat terhadap TPT
+
+### 4. Uji Asumsi Regresi
+Sebelum membangun model regresi, dilakukan uji asumsi:
+- **Normalitas residual** (Shapiro–Wilk dan QQ-Plot)
+- **Multikolinearitas** (VIF)
+- **Heteroskedastisitas** (Uji Breusch-Pagan)
+Semua asumsi terpenuhi sehingga model regresi layak digunakan.
+
+### 5. Pemodelan Regresi Linier Berganda
+Menyusun model regresi dengan TPT sebagai variabel respon dan:
+- TPAK  
+- Pertumbuhan Penduduk  
+- RLS  
+sebagai variabel prediktor.
+
+### 6. Uji Signifikansi Model
+- **Uji F** → menguji kelayakan model secara keseluruhan  
+- **Uji t** → menguji pengaruh masing-masing variabel secara parsial  
+
+### 7. Hasil Analisis
+Menyimpulkan temuan utama dan evaluasi model (R²).
+
+---
 # 📊Visualisasi Data
 
 ## 1. Barchart TPT
 <p align="center">
   <img src="Image/Barchart%20TPT.png" width="500">
 </p>
+<p align="center"><i>Gambar 1. Barchart Tingkat Pengangguran Terbuka </i></p>
+
 Grafik Tingkat Pengangguran Terbuka (TPT) menunjukkan bahwa Kota Cimahi, Kabupaten Bekasi, dan Kota Sukabumi mencatatkan TPT tertinggi  di atas 7,5%. Sebaliknya, kabupaten seperti Pangandaran dan Ciamis memiliki TPT terendah di bawah 4%. Pada kabupaten Pangandaran, TPT yang rendah ini sejalan dengan Tingkat Partisipasi Angkatan Kerja (TPAK) yang sangat tinggi di daerah tersebut, Hal ini mengindikasikan bahwa di derah ini  mayoritas penduduk usia kerja aktif dan terserap dengan baik.
 
 ## 2. Barchart TPAK
 <p align="center">
   <img src="Image/Barchart%20TPAK.png" width="500">
 </p>
+<p align="center"><i>Gambar 2. Barchart Tingkat Partisipasi Angkatan Kerja. </i></p>
+
 Berdasarkan grafik Tingkat Partisipasi Angkatan Kerja (TPAK) di Kabupaten/Kota Jawa Barat, menunjukkan bahwa Pangandaran memimpin dengan TPAK tertinggi yaitu 80% diikuti oleh kabupaten seperti Cianjur dan Subang. Hal ini mengindikasikan tingginya keterlibatan penduduk usia kerja dalam kegiatan ekonomi di wilayah-wilayah yang cenderung merupakan kawasan agraris atau pedesaan. Di sisi lain, kota-kota besar dan metropolitan seperti Kota Depok dan Kota Sukabumi mencatatkan TPAK terendah dengan nilai di bawah 70%.
 
 ## 3. Barchart RLS
 <p align="center">
   <img src="Image/Barchart%20RLS.png" width="500">
 </p>
+<p align="center"><i>Gambar 3. Barchart Rata-Rata Lama Sekolah. </i></p>
+
 Grafik Rata-Rata Lama Sekolah (RLS) di berbagai Kabupaten/Kota di Jawa Barat, menunjukkan bahwa kota-kota besar dan metropolitan seperti Kota Bekasi, Kota Depok, dan Kota Cimahi menempati posisi teratas dengan RLS tertinggi rata-rata 11 tahun. Hal ini mengindikasikan bahwa rata-rata penduduk di daerah tersebut telah menempuh pendidikan setara SMA atau lebih. Sebaliknya, wilayah-wilayah seperti Kabupaten Subang, Sukabumi dan Indramayu berada di posisi terbawah dengan RLS lebih rendah yaitu di bawah 8.0 tahun yang mengindikasikan bahwa rata-rata penduduknya hanya memiliki pendidikan setara SMP atau di bawahnya.
 
 ## 4. Barchart Laju Pertumbuhan Penduduk
 <p align="center">
   <img src="Image/Barchart%20Laju%20Pertumbuhan.png" width="500">
 </p>
+<p align="center"><i>Gambar 4. Barchart Rata-Rata Laju Pertumbuhan Penduduk. </i></p>
+
 Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provinsi Jawa Barat, menunjukkan bahwa Kota Sukabumi, Kabupaten Bandung Barat, dan Kota Cimahi menempati posisi dengan laju pertumbuhan penduduk tertinggi dengan nilai pertumbuhan penduduk rata-rata 1,4%. Hal ini mungkin didorong oleh tingginya urbanisasi dan migrasi masuk seiring perkembangan wilayah tersebut menjadi pusat ekonomi. Sedangkan, daerah seperti Kabupaten Sumedang, Pangandaran, dan Ciamis berada pada posisi terbawah dengan laju pertumbuhan penduduk yang relatif rendah di bawah 1%.
 
+---
 # 🔗Hasil Uji Korelasi
 
 ## 1. TPT vs Laju Pertumbuhan Penduduk
 <p align="center">
   <img src="Image/Korelasi%20Penduduk%20dan%20TPT.jpg" width="400">
 </p>
+<p align="center"><i>Gambar 5. Hasil Koefisien Korelasi TPT vs Laju Pertumbuhan Penduduk. </i></p>
+
 <ul> <li><strong>Koefisien Korelasi (cor) = 0.649 (positif)</strong><br> Artinya terdapat hubungan searah antara Penduduk dan TPT. <div style="margin-left:20px;"> &gt; Jika Penduduk meningkat, maka TPT juga cenderung meningkat.<br> &gt; Nilai korelasi 0.649 menunjukkan hubungan linear cukup kuat (atau sedang). </div> </li> <li><strong>p-value = 0.0002497 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear yang signifikan antara Penduduk dan TPT. </li> <li><strong>Selang Kepercayaan (95%) = 0.3571215 sampai 0.8254657</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
 
 ## 2. TPT vs RLS
 <p align="center">
   <img src="Image/Korelasi%20RLS%20dan%20TPT.jpg" width="400">
 </p>
+<p align="center"><i>Gambar 6. Hasil Koefisien Korelasi TPT vs RLS. </i></p>
+
 <ul> <li><strong>Koefisien Korelasi (cor) = 0.421 (positif)</strong><br> Artinya terdapat hubungan searah antara RLS dan TPT. <div style="margin-left:20px;"> &gt; Jika RLS meningkat, maka TPT cenderung meningkat.<br> &gt; Nilai korelasi 0.421 menunjukkan hubungan linear yang lemah. </div> </li> <li><strong>p-value = 0.028767 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear signifikan antara RLS dan TPT. </li> <li><strong>Selang Kepercayaan (95%) = 0.049 sampai 0.691</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
 
 ## 3. TPT vs TPAK
 <p align="center">
   <img src="Image/Korelasi%20TPAK%20dan%20TPT.jpg" width="400">
 </p>
+<p align="center"><i>Gambar 7. Hasil Koefisien Korelasi TPT vs TPAK </i></p>
+
 <ul> <li><strong>Koefisien Korelasi (cor) = -0.652 (negatif)</strong><br> Artinya terdapat hubungan berlawanan arah antara TPAK dan TPT. <div style="margin-left:20px;"> &gt; Jika TPAK meningkat, maka TPT cenderung menurun.<br> &gt; Nilai korelasi -0.652 menunjukkan hubungan linear cukup kuat. </div> </li> <li><strong>p-value = 0.0002307 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear signifikan dan kuat. </li> <li><strong>Selang Kepercayaan (95%) = -0.8269401 sampai -0.3611676</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
 
+---
 # ⚙️Uji Asumsi
 ## 1. Uji Normalitas
 <p align="center">
   <img src="Image/Normal%20Plot.png" width="350">
 </p>
+<p align="center"><i>Gambar 8. Plot Normal Q-Q . </i></p>
 
 Uji normalitas berfungsi untuk menguji apakah nilai residual dalam model regresi memiliki distribusi normal atau tidak. Berdasarkan plot Normal Q-Q, dapat diketahui bahwa mayoritas sebaran data berada di sekitar garis lurus yang mengindikasikan bahwa data tersebut berdistribusi normal. Meskipun demikian analisis visual bersifat subjektif, maka diperlukan uji statistik seperti Shapiro-Wilk untuk memperoleh kesimpulan yang lebih objektif.
 
 <p align="center">
   <img src="Image/Uji%20Normalitas.jpg" width="280">
 </p>
+<p align="center"><i>Gambar 9. Hasil Uji Normalitas. </i></p>
 
 Pengujian normalitas dilakukan menggunakan Shapiro – Wilk karena jumlah data yang digunakan dalam penelitian ini adalah < 50. Berdasarkan hasil uji tersebut diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4881) > 𝛼 (0.05). Hal ini berarti bawa residual menyebar normal dan asumsi normalitas terpenuhi.
 
@@ -92,6 +165,8 @@ Pengujian normalitas dilakukan menggunakan Shapiro – Wilk karena jumlah data y
 <p align="center">
   <img src="Image/VIF.jpg" width="225">
 </p>
+<p align="center"><i>Gambar 10. Hasil Uji multikolinearitas. </i></p>
+
 Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapat korelasi antar variabel independen. Salah satu cara yang digunakan untuk mendeteksi adanya multikolinearitas adalah mengecek nilai VIF. Hasil uji multikolinearitas diperoleh nilai VIF masing-masing variabel yaitu Penduduk (1,313), RLS (1,244), TPAK (1,587) < 5. Hal ini berarti tidak terjadi multikolineritas atau asumsi multikolinearitas terpenuhi.
 
 ## 3. Uji Heteroskedastisitas
@@ -99,14 +174,17 @@ Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapa
 <p align="center">
   <img src="Image/Uji%20Heteroskedastisitas.jpg" width="300">
 </p>
+<p align="center"><i>Gambar 11. Hasil Uji Heteroskedastisitas </i></p>
+
 Uji heterosekedastisitas bertujuan untuk melihat apakah dalam model regresi terjadi ketidaksamaan varians dari residual satu pengamatan ke pengamatan yang lain. Jika varians dari nilai residual antar pengamatan tetap maka disebut homokedastis. Akan tetapi jika berbeda, maka disebut heteroskedastisitas. Model regresi yang baik adalah model yang bersifat homokedastis. Berdasarkan uji Breusch Pagan Godfrey diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4251) > 𝛼 (0.05). Hal ini berarti bahwa tidak terdapat indikasi heteroskedastisitas atau asumsi uji heteroskedastisitas sudah terpenuhi.
 
-
-# 🎯Hasil Analisis Regresi Berganda
+---
+# 📈Hasil Analisis Regresi Berganda
 Pengolahan dengan analisis Regreasi Berganda memperoleh hasil sebagai berikut.
 <p align="center">
   <img src="Image/Hasil%20Regresi.jpg" width="450">
 </p>
+<p align="center"><i>Gambar 12. Hasil Analisi Regresi Berganda. </i></p>
 Berdasarkan hal tersebut, dapat diinterpretasikan hal-hal sebagai berikut.
 
 ## 1. Uji Overall (Uji F)
@@ -126,6 +204,7 @@ Ini menguji pengaruh masing-masing variabel independen terhadap variabel depende
 <p align="center">
   <img src="Image/Uji%20Parsial.png" width="400">
 </p>
+<p align="center"><i>Gambar 13. Plot P-Value Uji Parsial . </i></p>
 a.	Variabel: Penduduk
 <br> p-value (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT. Artinya, jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 unit pada Penduduk akan meningkatkan TPT sebesar 3.22454 unit. <br>
 
@@ -146,5 +225,63 @@ $$
 
 Secara keseluruhan, model ini layak digunakan (signifikan) dan mampu menjelaskan 55.09% keragaman TPT. Variabel yang terbukti berpengaruh signifikan terhadap TPT adalah Penduduk (pengaruh positif) dan TPAK (pengaruh negatif). Variabel RLS tidak terbukti berpengaruh signifikan dalam model ini.
 
-## 4. Kesimpulan
-<ul> <li>Ketiga variabel (Penduduk, RLS, TPAK) memiliki hubungan linear yang signifikan terhadap TPT.</li> <li>Hubungan terkuat: <ul> <li>TPAK → TPT (korelasi negatif kuat)</li> <li>Penduduk → TPT (korelasi positif kuat)</li> </ul> </li> <li>Variabel RLS memiliki hubungan yang lebih lemah dibanding dua variabel lain.</li> </ul>
+## 	4. Koefisien Determimnasi
+
+
+
+# 📝Kesimpulan
+1. Variabel Penduduk, RLS, dan TPAK memiliki hubungan linear dengan TPT, di mana Penduduk berpengaruh positif dan signifikan, TPAK berpengaruh negatif dan signifikan, sedangkan RLS memiliki pengaruh lebih lemah.
+2. Variabel yang paling signifikan memengaruhi TPT adalah Laju Pertumbuhan Penduduk dan TPAK. RLS tidak menjadi faktor dominan. Hal ini mengindikasikan bahwa kebijakan penurunan TPT dapat difokuskan pada peningkatan partisipasi tenaga kerja dan pengelolaan pertumbuhan penduduk.
+
+
+<h2 align="center">👥 Anggota Kelompok 2</h2>
+
+<table align="center">
+<tr>
+
+  <td align="center" width="30%" style="padding:15px;">
+
+  ### 👤 Arifatun Nisak Nur Amanati  
+  NIM: M0501251027
+
+  </td>
+
+  <td align="center" width="30%" style="padding:15px;">
+
+  ### 👤 Haniyathul Husna  
+  NIM: M0501251011
+
+  </td>
+
+  <td align="center" width="30%" style="padding:15px;">
+
+  ### 👤 Lalu Muhammad Yahya  
+  NIM: M0501251015
+
+  </td>
+
+</tr>
+
+<tr>
+
+  <td align="center" width="30%" style="padding:15px;">
+
+  ### 👤 Ni Made Ray Diantari  
+  NIM: M0501251033
+
+  </td>
+
+  <td align="center" width="30%" style="padding:15px;">
+
+  ### 👤 Suci Rahmadani  
+  NIM: M0501251057
+
+  </td>
+
+  <!-- Kolom kosong untuk keseimbangan -->
+  <td align="center" width="30%" style="padding:15px; color:transparent;">
+  .
+  </td>
+
+</tr>
+</table>
