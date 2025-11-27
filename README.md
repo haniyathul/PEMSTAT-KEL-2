@@ -5,7 +5,7 @@
 ---
 # 🧩Latar Belakang
 <p align="center">
-  <img class="banner" src="Image/TPT%20Pulau%20Jawa.jpg"/>
+  <img class="banner" src="Image/TPT%20Provinsi%20Pulau%20Jawa.jpg"/>
 </p>
 Tingkat Pengangguran Terbuka (TPT) merupakan salah satu indikator utama yang mencerminkan kondisi ekonomi dan ketenagakerjaan di suatu daerah. Di Provinsi Jawa Barat, angka TPT cenderung lebih tinggi dibandingkan provinsi lain di Indonesia menurut data BPS. Kondisi ini menunjukkan adanya ketidakseimbangan antara pertumbuhan penduduk, ketersediaan lapangan kerja, serta kualitas tenaga kerja. Oleh karena itu, penting dilakukan analisis untuk mengetahui faktor-faktor yang memengaruhi tingkat pengangguran terbuka di provinsi ini.
 
@@ -51,8 +51,7 @@ Data diambil dari publikasi Badan Pusat Statistik (BPS) Provinsi Jawa Barat, men
 - Rata-Rata Lama Sekolah (RLS)
 
 ### 2. Eksplorasi Data Awal
-- Melihat statistik deskriptif dari setiap variabel
-- Mengidentifikasi pola awal melalui grafik barchart TPT, TPAK, RLS, dan Pertumbuhan Penduduk
+- Mengidentifikasi pola awal melalui grafik barchart TPT, TPAK, RLS, dan Laju Pertumbuhan Penduduk
 - Mengamati wilayah dengan nilai ekstrem (tertinggi/terendah)
 
 ### 3. Analisis Korelasi
@@ -62,15 +61,14 @@ Data diambil dari publikasi Badan Pusat Statistik (BPS) Provinsi Jawa Barat, men
 
 ### 4. Uji Asumsi Regresi
 Sebelum membangun model regresi, dilakukan uji asumsi:
-- **Normalitas residual** (Shapiro–Wilk dan QQ-Plot)
-- **Multikolinearitas** (VIF)
-- **Heteroskedastisitas** (Uji Breusch-Pagan)
-Semua asumsi terpenuhi sehingga model regresi layak digunakan.
+- **Normalitas residual** (<i>Shapiro–Wilk</i> dan QQ-Plot)
+- **Multikolinearitas** (VIF/<i>Variance Inflation Factor</i>)
+- **Heteroskedastisitas** (Uji <i>Breusch-Pagan</i>)
 
 ### 5. Pemodelan Regresi Linier Berganda
 Menyusun model regresi dengan TPT sebagai variabel respon dan:
 - TPAK  
-- Pertumbuhan Penduduk  
+- Laju Pertumbuhan Penduduk  
 - RLS  
 sebagai variabel prediktor.
 
@@ -84,6 +82,34 @@ Menyimpulkan temuan utama dan evaluasi model (R²).
 ---
 # 🗂️Struktur Proyek
 
+```
+PEMSTAT-KEL-2/
+├── Data/
+│   └── Data GitHub.xlsx
+│
+├── Image/
+│   ├── Banner Tingkat Pengangguran Terbuka.jpg
+│   ├── Barchart Laju Pertumbuhan.png
+│   ├── Barchart RLS.png
+│   ├── Barchart TPAK.png
+│   ├── Barchart TPT.png
+│   ├── Hasil Regresi.jpg
+│   ├── Korelasi Penduduk dan TPT.jpg
+│   ├── Korelasi RLS dan TPT.jpg
+│   ├── Korelasi TPAK dan TPT.jpg
+│   ├── Normal Plot.png
+│   ├── TPT Provinsi Pulai Jawa.jpg
+│   ├── Uji Heteroskedastisitas.jpg
+│   ├── Uji Normalitas.jpg
+│   ├── Uji Parsial.png
+│   ├── VIF.jpg
+│   └── logo bps.png
+│
+├── Syntax/
+│   └── Pemro_Kelompok.R
+│
+└── README.md
+```
 
 ---
 # 📊Visualisasi Data
