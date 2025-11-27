@@ -1,4 +1,4 @@
-#input data
+ #input data
 pemro = read.delim("clipboard")
 pemro
 
@@ -36,7 +36,7 @@ ggplot(pemro, aes(x = TPT,
                   y = fct_reorder(Kab.Kota, TPT, .desc = FALSE), 
                   fill = TPT)) +
   geom_bar(stat = "identity", width = 0.7) +
-  scale_fill_gradient(low = "red", high = "green", name = "TPT") +
+  scale_fill_gradient(low = "green", high = "red", name = "TPT") +
   labs(title = "Tingkat Pengangguran Terbuka",
        x = "Average TPT",
        y = "Kab/Kota di Indonesia") +
@@ -64,36 +64,4 @@ theme_minimal(base_size = 12) +
     legend.position = "none"
   )
 
-# Barchart TPAK
-ggplot(pemro, aes(x = TPAK, 
-                  y = fct_reorder(Kab.Kota, TPAK, .desc = FALSE), 
-                  fill = TPAK)) +
-  geom_bar(stat = "identity", width = 0.7) +
-  scale_fill_viridis_c(option = "viridis", name = "TPAK") +
-  labs(title = "Tingkat Partisipasi Angkatan Kerja",
-       x = "Average TPAK",
-       y = "Kab/Kota di Indonesia") +
-  theme_minimal(base_size = 12) +
-  theme(
-    plot.title = element_text(hjust = 0.5, face = "bold", size = 13),
-    axis.title.y = element_text(face = "bold"),
-    axis.title.x = element_text(face = "bold")
-  ) +
-  coord_cartesian(xlim = c(60, 80))
-
-#Barchart Laju Pertumbuhan Penduduk
-ggplot(pemro, aes(x = Penduduk, y = fct_reorder(Kab.Kota, Penduduk, .desc = FALSE),, fill = Penduduk)) +
-  geom_bar(stat = "identity", width = 0.7) +
-  scale_fill_viridis_c(option = "plasma", 
-                       name = "Penduduk")+
-  labs(title = "Laju Pertumbuhan Penduduk",
-       x = "Average Penduduk",
-       y = "Kab/Kota di Indonesia")
-theme_minimal(base_size = 12) +
-  theme(
-    plot.title = element_text(hjust = 0.5, face = "bold", size = 13),
-    axis.title.y = element_text(face = "bold"),
-    axis.title.x = element_text(face = "bold"),
-    legend.position = "none"
-  )
 
