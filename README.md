@@ -231,8 +231,8 @@ Kesimpulan:
 Ini menguji pengaruh masing-masing variabel independen terhadap variabel dependen secara individu, dengan asumsi variabel lain konstan, dan α = 0.05.
 
 <p align="center">
-  <img src="Image/Uji%20Parsial.png" width="45%" />
-  <img src="Image/Arah%20Faktor.jpg" width="45%" />
+  <img src="Image/Uji%20Parsial.png" width="40%" />
+  <img src="Image/Arah%20Faktor.jpg" width="55%" />
 </p>
 <p align="center"><i>Gambar 13. (a). Plot P-Value Uji Parsial (b). Kekuatan Pengaruh.</i></p>
 </p>
