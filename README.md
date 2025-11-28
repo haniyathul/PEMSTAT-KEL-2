@@ -87,11 +87,11 @@ PEMSTAT-KEL-2/
 │   └── Data GitHub.xlsx
 │
 ├── Image/
+│   ├── Arah Penentu.jpg
 │   ├── Barchart Laju Pertumbuhan.png
 │   ├── Barchart RLS.png
 │   ├── Barchart TPAK.png
 │   ├── Barchart TPT.png
-│   ├── Faktor Penentu.png
 │   ├── Hasil Regresi.jpg
 │   ├── Korelasi Penduduk dan TPT.jpg
 │   ├── Korelasi RLS dan TPT.jpg
@@ -229,13 +229,20 @@ Kesimpulan:
 
 ## 2. Uji Parsial (Uji t)
 Ini menguji pengaruh masing-masing variabel independen terhadap variabel dependen secara individu, dengan asumsi variabel lain konstan, dan α = 0.05.
-<p align="center">
-  <img src="Image/Uji%20Parsial.png" width="400">
-  <img src="Image/Arah%20Faktor%20Penentu.png" width="500">
-</p>
-<p align="center"><i>(a)      (b)</i></p>
+<div style="display: flex; justify-content: center; gap: 20px;">
+
+  <div style="text-align: center;">
+    <img src="Image/Uji%20Parsial.png" width="400">
+    <div style="font-style: italic; margin-top: 4px;">(a)</div>
+  </div>
+
+  <div style="text-align: center;">
+    <img src="Image/Arah%20Penentu.jpg" width="500">
+    <div style="font-style: italic; margin-top: 4px;">(b)</div>
+  </div>
+
+</div>
 <p align="center"><i>Gambar 13. (a). Plot P-Value Uji Parsial (b). Kekuatan Pengaruh.</i></p>
-</p>
 
 ### a.	Variabel: Penduduk
 <i>p-value</i> (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT. Artinya, jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 persen pada Penduduk akan meningkatkan TPT sebesar 3.22%.
