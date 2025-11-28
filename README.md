@@ -16,11 +16,11 @@ Untuk menganalisis hubungan antarvariabel tersebut, penelitian ini menggunakan p
 ---
 # 🎯Tujuan Penelitian
 
-Tujuan dari penelitian ini adalah sebagai berikut:
+**Tujuan dari penelitian ini adalah sebagai berikut:**
 
-1. **Menganalisis pengaruh Laju Pertumbuhan Penduduk, Rata-Rata Lama Sekolah, dan Tingkat Partisipasi Angkatan Kerja terhadap Tingkat Pengangguran Terbuka.**
+1. Menganalisis pengaruh Laju Pertumbuhan Penduduk, Rata-Rata Lama Sekolah, dan Tingkat Partisipasi Angkatan Kerja terhadap Tingkat Pengangguran Terbuka.
   
-2. **Mengidentifikasi variabel yang memiliki pengaruh paling signifikan.** 
+2. Mengidentifikasi variabel yang memiliki pengaruh paling signifikan.
 
 ---
 # 📋Sumber Data dan Variabel
@@ -88,7 +88,6 @@ PEMSTAT-KEL-2/
 │   └── Data GitHub.xlsx
 │
 ├── Image/
-│   ├── Banner Tingkat Pengangguran Terbuka.jpg
 │   ├── Barchart Laju Pertumbuhan.png
 │   ├── Barchart RLS.png
 │   ├── Barchart TPAK.png
@@ -102,8 +101,7 @@ PEMSTAT-KEL-2/
 │   ├── Uji Heteroskedastisitas.jpg
 │   ├── Uji Normalitas.jpg
 │   ├── Uji Parsial.png
-│   ├── VIF.jpg
-│   └── logo bps.png
+│   └── VIF.png
 │
 ├── Syntax/
 │   └── Pemro_Kelompok.R
@@ -249,7 +247,7 @@ Ini menguji pengaruh masing-masing variabel independen terhadap variabel depende
 Berdasarkan nilai Estimate tersebut, maka persamaan regresi yang terbentuk adalah:
 
 $$
-\text{TPT} = 12.22880 + 3.22454 \cdot \text{Penduduk} + 0.25801 \cdot \text{RLS} - 0.17110 \cdot \text{TPAK}
+\text{TPT} = 12.228 + 3.224 \cdot \text{Penduduk} + 0.258 \cdot \text{RLS} - 0.171 \cdot \text{TPAK}
 $$
 
 ## 	4. Koefisien Determimnasi
