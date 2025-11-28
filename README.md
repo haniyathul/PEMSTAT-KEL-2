@@ -91,6 +91,7 @@ PEMSTAT-KEL-2/
 │   ├── Barchart RLS.png
 │   ├── Barchart TPAK.png
 │   ├── Barchart TPT.png
+│   ├── Faktor Penentu.png
 │   ├── Hasil Regresi.jpg
 │   ├── Korelasi Penduduk dan TPT.jpg
 │   ├── Korelasi RLS dan TPT.jpg
@@ -115,7 +116,7 @@ PEMSTAT-KEL-2/
 <p align="center">
   <img src="Image/Barchart%20TPT.png" width="500">
 </p>
-<p align="center"><i>Gambar 1. Barchart Tingkat Pengangguran Terbuka </i></p>
+<p align="center"><i>Gambar 1. Barchart Tingkat Pengangguran Terbuka.</i></p>
 
 Grafik Tingkat Pengangguran Terbuka (TPT) menunjukkan bahwa Kota Cimahi, Kabupaten Bekasi, dan Kota Sukabumi mencatatkan TPT tertinggi  di atas 7,5%. Sebaliknya, kabupaten seperti Pangandaran dan Ciamis memiliki TPT terendah di bawah 4%. Pada kabupaten Pangandaran, TPT yang rendah ini sejalan dengan Tingkat Partisipasi Angkatan Kerja (TPAK) yang sangat tinggi di daerah tersebut. Hal ini mengindikasikan bahwa di daerah ini  mayoritas penduduk usia kerja aktif dan terserap dengan baik.
 
@@ -166,7 +167,7 @@ Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provins
 <p align="center">
   <img src="Image/Korelasi%20TPAK%20dan%20TPT.jpg" width="400">
 </p>
-<p align="center"><i>Gambar 7. Hasil Koefisien Korelasi TPT vs TPAK </i></p>
+<p align="center"><i>Gambar 7. Hasil Koefisien Korelasi TPT vs TPAK. </i></p>
 
 <ul> <li><strong>Koefisien Korelasi (cor) = -0.652 (negatif)</strong><br> Artinya terdapat hubungan berlawanan arah antara TPAK dan TPT. <div style="margin-left:20px;"> &gt; Jika TPAK meningkat, maka TPT cenderung menurun.<br> &gt; Nilai korelasi -0.652 menunjukkan hubungan linear cukup kuat. </div> </li> <li><strong>p-value = 0.0002307 &lt; 0.05</strong><br> Artinya H0 ditolak → terdapat hubungan linear signifikan dan kuat. </li> <li><strong>Selang Kepercayaan (95%) = -0.8269401 sampai -0.3611676</strong><br> Rentang tidak mencakup 0 → hubungan signifikan. </li> </ul>
 
@@ -201,7 +202,7 @@ Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapa
 <p align="center">
   <img src="Image/Uji%20Heteroskedastisitas.jpg" width="300">
 </p>
-<p align="center"><i>Gambar 11. Hasil Uji Heteroskedastisitas </i></p>
+<p align="center"><i>Gambar 11. Hasil Uji Heteroskedastisitas. </i></p>
 
 Uji heteroskedastisitas bertujuan untuk melihat apakah dalam model regresi terjadi ketidaksamaan varians dari residual satu pengamatan ke pengamatan yang lain. Jika varians dari nilai residual antar pengamatan tetap maka disebut homokedastis. Akan tetapi jika berbeda, maka disebut heteroskedastisitas. Model regresi yang baik adalah model yang bersifat homokedastis. Berdasarkan uji <i>Breusch Pagan Godfrey</i> diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4251) > 𝛼 (0.05). Hal ini berarti bahwa tidak terdapat indikasi heteroskedastisitas atau asumsi uji heteroskedastisitas sudah terpenuhi.
 
@@ -231,7 +232,7 @@ Ini menguji pengaruh masing-masing variabel independen terhadap variabel depende
 <p align="center">
   <img src="Image/Uji%20Parsial.png" width="400">
 </p>
-<p align="center"><i>Gambar 13. Plot P-Value Uji Parsial . </i></p>
+<p align="center"><i>Gambar 13. Plot P-Value Uji Parsial.</i></p>
 
 ### a.	Variabel: Penduduk
 <i>p-value</i> (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT. Artinya, jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 persen pada Penduduk akan meningkatkan TPT sebesar 3.22%.
@@ -249,7 +250,12 @@ $$
 \text{TPT} = 12.228 + 3.224 \cdot \text{Penduduk} + 0.258 \cdot \text{RLS} - 0.171 \cdot \text{TPAK}
 $$
 
-## 	4. Koefisien Determimnasi
+<p align="center">
+  <img src="Image/Faktor%20Penentu.png" width="500">
+</p>
+<p align="center"><i>Gambar 14. Kekuatan Pengaruh.</i></p>
+
+## 	4. Koefisien Determinasi
 Nilai koefisien determinasi (**R²**) yang diperoleh adalah **55.09%**.
 
 **Artinya:**
