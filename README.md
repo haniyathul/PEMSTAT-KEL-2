@@ -7,11 +7,9 @@
 <p align="center">
   <img class="banner" src="Image/TPT%20Provinsi%20Pulau%20Jawa.jpg"/>
 </p>
-Tingkat Pengangguran Terbuka (TPT) merupakan salah satu indikator utama yang mencerminkan kondisi ekonomi dan ketenagakerjaan di suatu daerah. Di Provinsi Jawa Barat, angka TPT cenderung lebih tinggi dibandingkan provinsi lain di Indonesia menurut data BPS. Kondisi ini menunjukkan adanya ketidakseimbangan antara pertumbuhan penduduk, ketersediaan lapangan kerja, serta kualitas tenaga kerja. Oleh karena itu, penting dilakukan analisis untuk mengetahui faktor-faktor yang memengaruhi tingkat pengangguran terbuka di provinsi ini.
-
-Beberapa variabel yang diperkirakan berpengaruh terhadap TPT antara lain laju pertumbuhan penduduk, rata-rata lama sekolah, dan tingkat partisipasi angkatan kerja (TPAK). Pertumbuhan penduduk yang cepat dapat meningkatkan jumlah pencari kerja, sementara pendidikan (lama sekolah) diharapkan menurunkan pengangguran dengan meningkatkan kualitas tenaga kerja. Di sisi lain, TPAK yang tinggi menunjukkan semakin banyak penduduk usia kerja yang aktif di pasar tenaga kerja, yang bisa berdampak positif maupun negatif terhadap tingkat pengangguran tergantung pada kemampuan penyerapan kerja.
-
-Untuk menganalisis hubungan antarvariabel tersebut, penelitian ini menggunakan pendekatan regresi linier dengan bantuan perangkat lunak R. Pendekatan ini didasarkan pada buku “Introduction to Machine Learning Using R: Konsep, Teori, dan Praktik” karya Lukmanul Hakim dan Asep Saefuddin (2022), yang menjelaskan penerapan konsep machine learning dasar dalam pemodelan regresi menggunakan R. Buku tersebut menekankan pentingnya pemrosesan data, validasi model, serta interpretasi hasil secara komputasional dan statistikal untuk mendukung analisis kuantitatif berbasis data dalam penelitian sosial ekonomi.
+Tingkat Pengangguran Terbuka (TPT) merupakan indikator penting yang mencerminkan kondisi ketenagakerjaan suatu wilayah. Di Jawa Barat, TPT masih relatif tinggi dibanding rata-rata nasional yang sebesar 4,85%. Data BPS terbaru per Agustus 2025 menunjukkan bahwa TPT Jawa Barat berada pada angka 6,77%, sedikit meningkat dari Februari 2025 yang mencapai 6,74%. Meskipun terdapat tanda-tanda perbaikan sejak 2024, tingginya angka TPT mencerminkan bahwa pasar kerja di Jawa Barat belum mampu mengimbangi pertumbuhan angkatan kerja dan masih menghadapi masalah ketidaksesuaian keterampilan tenaga kerja dengan permintaan industri.
+<br>Kondisi tersebut menegaskan perlunya analisis terhadap faktor-faktor yang berpengaruh terhadap TPT. Beberapa variabel yang diperkirakan memiliki peran penting antara lain laju pertumbuhan penduduk, rata-rata lama sekolah sebagai indikator kualitas pendidikan, serta tingkat partisipasi angkatan kerja (TPAK). Pertumbuhan penduduk dapat meningkatkan jumlah pencari kerja, sedangkan pendidikan yang lebih baik diharapkan mampu meningkatkan peluang bekerja. TPAK sendiri mencerminkan seberapa banyak penduduk usia kerja yang aktif di pasar tenaga kerja, yang dapat berdampak berbeda bergantung pada kapasitas penyerapan kerja.
+<br>Untuk memahami hubungan antarvariabel tersebut, penelitian ini menggunakan analisis regresi linier dengan bantuan perangkat lunak R. Pendekatan ini didasarkan pada metode yang dibahas dalam buku Pengantar Machine Learning Menggunakan R (Hakim & Saefuddin, 2022), yang menekankan pentingnya pengolahan data dan interpretasi model dalam penelitian sosial ekonomi.
 
 ---
 # 🎯Tujuan Penelitian
@@ -224,8 +222,8 @@ Dari tabel diperoleh hasil uji signifikansi model secara keseluruhan:
 
 Nilai *p-value* yang sangat kecil (7.709e-05), jauh di bawah tingkat signifikansi umum α = 0.05 menunjukkan bahwa hipotesis nol (H0) yang menyatakan semua koefisien variabel independen (Laju Pertumbuhan Penduduk, RLS, TPAK) secara bersama-sama sama dengan nol ditolak. 
 
-Kesimpulannya: 
-Model secara statistik menyatakan bahwa setidaknya ada satu variabel independen (Laju Pertumbuhan Penduduk, RLS, atau TPAK) yang berpengaruh secara signifikan terhadap variabel dependen TPT.
+Kesimpulan: 
+<br>Model secara statistik menyatakan bahwa setidaknya ada satu variabel independen (Laju Pertumbuhan Penduduk, RLS, atau TPAK) yang berpengaruh secara signifikan terhadap variabel dependen TPT.
 
 ## 2. Uji Parsial (Uji t)
 Ini menguji pengaruh masing-masing variabel independen terhadap variabel dependen secara individu, dengan asumsi variabel lain konstan, dan α = 0.05.
