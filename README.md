@@ -202,7 +202,7 @@ Uji multikolinearitas bertujuan untuk menguji apakah dalam model regresi terdapa
 </p>
 <p align="center"><i>Gambar 11. Hasil Uji Heteroskedastisitas </i></p>
 
-Uji heterosekedastisitas bertujuan untuk melihat apakah dalam model regresi terjadi ketidaksamaan varians dari residual satu pengamatan ke pengamatan yang lain. Jika varians dari nilai residual antar pengamatan tetap maka disebut homokedastis. Akan tetapi jika berbeda, maka disebut heteroskedastisitas. Model regresi yang baik adalah model yang bersifat homokedastis. Berdasarkan uji <i>Breusch Pagan Godfrey</i> diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4251) > 𝛼 (0.05). Hal ini berarti bahwa tidak terdapat indikasi heteroskedastisitas atau asumsi uji heteroskedastisitas sudah terpenuhi.
+Uji heteroskedastisitas bertujuan untuk melihat apakah dalam model regresi terjadi ketidaksamaan varians dari residual satu pengamatan ke pengamatan yang lain. Jika varians dari nilai residual antar pengamatan tetap maka disebut homokedastis. Akan tetapi jika berbeda, maka disebut heteroskedastisitas. Model regresi yang baik adalah model yang bersifat homokedastis. Berdasarkan uji <i>Breusch Pagan Godfrey</i> diperoleh nilai 𝑝 − 𝑣𝑎𝑙𝑢𝑒 (0.4251) > 𝛼 (0.05). Hal ini berarti bahwa tidak terdapat indikasi heteroskedastisitas atau asumsi uji heteroskedastisitas sudah terpenuhi.
 
 ---
 # 📈Hasil Analisis Regresi Berganda
@@ -233,13 +233,13 @@ Ini menguji pengaruh masing-masing variabel independen terhadap variabel depende
 <p align="center"><i>Gambar 13. Plot P-Value Uji Parsial . </i></p>
 
 ### a.	Variabel: Penduduk
-<i>p-value</i> (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT. Artinya, jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 unit pada Penduduk akan meningkatkan TPT sebesar 3.22454 unit.
+<i>p-value</i> (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT. Artinya, jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 persen pada Penduduk akan meningkatkan TPT sebesar 3.22%.
 
 ### b.	Variabel: RLS
 <i>p-value</i> (0.18278) > 0.05 ➜ variabel RLS berpengaruh tidak signifikan terhadap TPT. Artinya, tidak ada bukti statistik yang cukup untuk menyatakan bahwa RLS memiliki pengaruh terhadap TPT dalam model ini.
 
 ### c.	Variabel: TPAK
-<i>p-value</i> (0.04839) < 0.05 ➜ variabel TPAK berpengaruh negatif dan signifikan terhadap TPT. Artinya, jika variabel Penduduk dan RLS konstan, maka setiap kenaikan 1 unit pada TPAK akan menurunkan TPT sebesar 0.17110 unit.
+<i>p-value</i> (0.04839) < 0.05 ➜ variabel TPAK berpengaruh negatif dan signifikan terhadap TPT. Artinya, jika variabel Penduduk dan RLS konstan, maka setiap kenaikan 1 persen pada TPAK akan menurunkan TPT sebesar 0.17%.
 
 ## 	3. Persamaan Model Regresi
 Berdasarkan nilai Estimate tersebut, maka persamaan regresi yang terbentuk adalah:
