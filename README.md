@@ -142,7 +142,7 @@ Grafik Rata-Rata Lama Sekolah (RLS) di berbagai Kabupaten/Kota di Jawa Barat, me
 </p>
 <p align="center"><i>Gambar 4. Barchart Rata-Rata Laju Pertumbuhan Penduduk. </i></p>
 
-Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provinsi Jawa Barat, menunjukkan bahwa Kota Sukabumi, Kabupaten Bandung Barat, dan Kota Cimahi menempati posisi dengan laju pertumbuhan penduduk tertinggi dengan nilai pertumbuhan penduduk rata-rata 1,4%. Hal ini mungkin didorong oleh tingginya urbanisasi dan migrasi masuk seiring perkembangan wilayah tersebut menjadi pusat ekonomi. Sedangkan, daerah seperti Kabupaten Sumedang, Pangandaran, dan Ciamis berada pada posisi terbawah dengan laju pertumbuhan penduduk yang relatif rendah di bawah 1%.
+Grafik rata-rata laju pertumbuhan penduduk di berbagai kabupaten/kota di Provinsi Jawa Barat, menunjukkan bahwa Kota Sukabumi, Kabupaten Bandung Barat, dan Kota Cimahi menempati posisi dengan laju pertumbuhan penduduk tertinggi dengan nilai pertumbuhan penduduk rata-rata 1,4%. Hal ini mungkin didorong oleh tingginya urbanisasi dan migrasi masuk seiring perkembangan wilayah tersebut menjadi pusat ekonomi. Adapun, daerah seperti Kabupaten Sumedang, Pangandaran, dan Ciamis berada pada posisi terbawah dengan laju pertumbuhan penduduk yang relatif rendah di bawah 1%.
 
 ---
 # 🔗Hasil Uji Korelasi
@@ -222,7 +222,7 @@ Dari tabel diperoleh hasil uji signifikansi model secara keseluruhan:
  <li><em><i>p-value</i></em>: 7.709e-05</li> 
 </ul>	
 
-Nilai *p-value* yang sangat kecil (7.709e-05), jauh di bawah tingkat signifikansi umum α = 0.05 menunjukkan bahwa hipotesis nol (H0) yang menyatakan semua koefisien variabel independen (Laju Pertumbuhan Penduduk, RLS, TPAK) secara bersama-sama sama dengan nol ditolak. 
+Nilai *p-value* yang sangat kecil (7.709e-05), jauh di bawah tingkat signifikansi umum α = 0.05 menunjukkan bahwa hipotesis nol (H0) yang menyatakan semua koefisien variabel independen (Laju Pertumbuhan Penduduk, RLS, TPAK) secara bersama-sama sama dengan hipotesis nol ditolak. 
 
 Kesimpulan: 
 <br>Model secara statistik menyatakan bahwa setidaknya ada satu variabel independen (Laju Pertumbuhan Penduduk, RLS, atau TPAK) yang berpengaruh secara signifikan terhadap variabel dependen TPT.
@@ -231,8 +231,11 @@ Kesimpulan:
 Ini menguji pengaruh masing-masing variabel independen terhadap variabel dependen secara individu, dengan asumsi variabel lain konstan, dan α = 0.05.
 <p align="center">
   <img src="Image/Uji%20Parsial.png" width="400">
+  <img src="Image/Arah%20Faktor%20Penentu.png" width="500">
 </p>
-<p align="center"><i>Gambar 13. Plot P-Value Uji Parsial.</i></p>
+<p align="center"><i>(a)      (b)</i></p>
+<p align="center"><i>Gambar 13. (a). Plot P-Value Uji Parsial (b). Kekuatan Pengaruh.</i></p>
+</p>
 
 ### a.	Variabel: Penduduk
 <i>p-value</i> (0.00643) < 0.05, ➜ variabel Penduduk berpengaruh positif dan signifikan terhadap TPT. Artinya, jika variabel RLS dan TPAK konstan, maka setiap kenaikan 1 persen pada Penduduk akan meningkatkan TPT sebesar 3.22%.
@@ -249,11 +252,6 @@ Berdasarkan nilai Estimate tersebut, maka persamaan regresi yang terbentuk adala
 $$
 \text{TPT} = 12.228 + 3.224 \cdot \text{Penduduk} + 0.258 \cdot \text{RLS} - 0.171 \cdot \text{TPAK}
 $$
-
-<p align="center">
-  <img src="Image/Faktor%20Penentu.png" width="500">
-</p>
-<p align="center"><i>Gambar 14. Kekuatan Pengaruh.</i></p>
 
 ## 	4. Koefisien Determinasi
 Nilai koefisien determinasi (**R²**) yang diperoleh adalah **55.09%**.
