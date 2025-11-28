@@ -8,8 +8,9 @@
   <img class="banner" src="Image/TPT%20Provinsi%20Pulau%20Jawa.jpg"/>
 </p>
 Tingkat Pengangguran Terbuka (TPT) merupakan indikator penting yang mencerminkan kondisi ketenagakerjaan suatu wilayah. Di Jawa Barat, TPT masih relatif tinggi dibanding rata-rata nasional yang sebesar 4,85%. Data BPS terbaru per Agustus 2025 menunjukkan bahwa TPT Jawa Barat berada pada angka 6,77%, sedikit meningkat dari Februari 2025 yang mencapai 6,74%. Meskipun terdapat tanda-tanda perbaikan sejak 2024, tingginya angka TPT mencerminkan bahwa pasar kerja di Jawa Barat belum mampu mengimbangi pertumbuhan angkatan kerja dan masih menghadapi masalah ketidaksesuaian keterampilan tenaga kerja dengan permintaan industri.
-<br>Kondisi tersebut menegaskan perlunya analisis terhadap faktor-faktor yang berpengaruh terhadap TPT. Beberapa variabel yang diperkirakan memiliki peran penting antara lain laju pertumbuhan penduduk, rata-rata lama sekolah sebagai indikator kualitas pendidikan, serta tingkat partisipasi angkatan kerja (TPAK). Pertumbuhan penduduk dapat meningkatkan jumlah pencari kerja, sedangkan pendidikan yang lebih baik diharapkan mampu meningkatkan peluang bekerja. TPAK sendiri mencerminkan seberapa banyak penduduk usia kerja yang aktif di pasar tenaga kerja, yang dapat berdampak berbeda bergantung pada kapasitas penyerapan kerja.
-<br>Untuk memahami hubungan antarvariabel tersebut, penelitian ini menggunakan analisis regresi linier dengan bantuan perangkat lunak R. Pendekatan ini didasarkan pada metode yang dibahas dalam buku Pengantar Machine Learning Menggunakan R (Hakim & Saefuddin, 2022), yang menekankan pentingnya pengolahan data dan interpretasi model dalam penelitian sosial ekonomi.
+<br>
+Kondisi tersebut menegaskan perlunya analisis terhadap faktor-faktor yang berpengaruh terhadap TPT. Beberapa variabel yang diperkirakan memiliki peran penting antara lain laju pertumbuhan penduduk, rata-rata lama sekolah sebagai indikator kualitas pendidikan, serta tingkat partisipasi angkatan kerja (TPAK). Pertumbuhan penduduk dapat meningkatkan jumlah pencari kerja, sedangkan pendidikan yang lebih baik diharapkan mampu meningkatkan peluang bekerja. TPAK mencerminkan seberapa banyak penduduk usia kerja yang aktif di pasar tenaga kerja, yang dapat berdampak berbeda bergantung pada kapasitas penyerapan kerja.
+<br>Untuk memahami hubungan antarvariabel tersebut, penelitian ini menggunakan analisis regresi linier dengan bantuan perangkat lunak R.
 
 ---
 # 🎯Tujuan Penelitian
@@ -30,7 +31,7 @@ Tingkat Pengangguran Terbuka (TPT) merupakan indikator penting yang mencerminkan
 <ul>
   <li> Tingkat Partisipasi Angkatan Kerja (%) </li>
   <li> Laju Pertumbuhan Penduduk (%) </li>
-  <li> Rata-Rata Lama Sekolah (%) </li> 
+  <li> Rata-Rata Lama Sekolah (Tahun) </li> 
 </ul>
 
 ## Variabel Respon (Y):
@@ -49,8 +50,7 @@ Data diambil dari publikasi Badan Pusat Statistik (BPS) Provinsi Jawa Barat, men
 - Rata-Rata Lama Sekolah (RLS)
 
 ### 2. Eksplorasi Data Awal
-- Mengidentifikasi pola awal melalui grafik barchart TPT, TPAK, RLS, dan Laju Pertumbuhan Penduduk
-- Mengamati wilayah dengan nilai ekstrem (tertinggi/terendah)
+- Mengidentifikasi pola awal dan mengamati wilayah dengan nilai ekstrem (tertinggi/terendah) melalui grafik barchart TPT, TPAK, RLS, dan Laju Pertumbuhan Penduduk.
 
 ### 3. Analisis Korelasi
 - Menghitung korelasi Pearson antar variabel
