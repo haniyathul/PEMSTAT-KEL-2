@@ -267,7 +267,7 @@ Nilai koefisien determinasi (**R²**) yang diperoleh adalah **55.09%**.
 
 ---
 # 📝Kesimpulan
-1. Variabel Penduduk, RLS, dan TPAK memiliki hubungan linear dengan TPT, di mana Penduduk berpengaruh positif dan signifikan, TPAK berpengaruh negatif dan signifikan, sedangkan RLS memiliki pengaruh lebih lemah.
+1. Variabel Laju Pertumbuhan Penduduk, RLS, dan TPAK memiliki hubungan linear dengan TPT, di mana Laju Pertumbuhan Penduduk berpengaruh positif dan signifikan, TPAK berpengaruh negatif dan signifikan, sedangkan RLS memiliki pengaruh lebih lemah.
 2. Variabel yang paling signifikan memengaruhi TPT adalah Laju Pertumbuhan Penduduk dan TPAK. RLS tidak menjadi faktor dominan. Hal ini mengindikasikan bahwa kebijakan penurunan TPT dapat difokuskan pada peningkatan partisipasi tenaga kerja dan pengelolaan pertumbuhan penduduk.
 
 
