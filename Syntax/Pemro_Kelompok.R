@@ -99,6 +99,7 @@ theme_minimal(base_size = 12) +
 
 
 library(dplyr)
+library(knitr)
 # Membuat tabel koefisien secara manual
 tabel_coef <- data.frame(
   Variable = c("(Intercept)", "Penduduk", "RLS", "TPAK"),
@@ -136,4 +137,5 @@ ggplot(coef_table_filtered, aes(x = Variable, y = Estimate, fill = Arah)) +
     legend.position = "bottom",
     axis.text.y = element_text(size = 8, face = "bold")
   )
+
 
