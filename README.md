@@ -47,7 +47,7 @@ Tahapan analisis yang dilakukan dalam penelitian ini adalah sebagai berikut:
 Data diambil dari publikasi Badan Pusat Statistik (BPS) Provinsi Jawa Barat, mencakup variabel:
 - Tingkat Pengangguran Terbuka (TPT)
 - Tingkat Partisipasi Angkatan Kerja (TPAK)
-- Laju Pertumbuhan Penduduk
+- Laju Pertumbuhan Penduduk (LPP)
 - Rata-Rata Lama Sekolah (RLS)
 
 ### 2. Eksplorasi Data Awal
@@ -253,7 +253,7 @@ Ini menguji pengaruh masing-masing variabel independen terhadap variabel depende
 Berdasarkan nilai Estimate tersebut, maka persamaan regresi yang terbentuk adalah:
 
 $$
-\text{TPT} = 12.228 + 3.224 \cdot \text{Penduduk} + 0.258 \cdot \text{RLS} - 0.171 \cdot \text{TPAK}
+\text{TPT} = 12.228 + 3.224 \cdot \text{LPP} + 0.258 \cdot \text{RLS} - 0.171 \cdot \text{TPAK}
 $$
 
 ## 	4. Koefisien Determinasi
