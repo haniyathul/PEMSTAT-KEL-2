@@ -116,26 +116,42 @@ coef_table_filtered <- tabel_coef %>%
                        "Positif (Meningkat)",
                        "Negatif (Menurun)"))
 
-# Buat Plot dengan Label Angka
-ggplot(coef_table_filtered, aes(x = Variable, y = Estimate, fill = Arah)) +
+# Hapus Intercept
+coef_table_filtered <- tabel_coef %>% 
+  filter(Variable != "(Intercept)") %>% 
+  mutate(
+    Arah = ifelse(Estimate > 0,
+                  "Positif (Meningkat)",
+                  "Negatif (Menurun)"),
+    hjust_label = ifelse(Estimate > 0, -0.2, 1.1)  # posisi teks
+  )
+
+# PlotKekuatan Estimate
+ggplot(coef_table_filtered,
+       aes(x = Variable, y = Estimate, fill = Arah)) +
   geom_col(alpha = 0.8, width = 0.7) +
   coord_flip() +
-  geom_text(aes(label = round(Estimate, 4),
-                hjust = ifelse(Estimate > 0, -0.2, 1.2)),
+  geom_text(aes(label = round(Estimate, 3),
+                hjust = hjust_label),
             size = 2.5, fontface = "bold") +
-  scale_fill_manual(values = c("red", "darkgreen")) +
+  scale_fill_manual(
+    values = c("Negatif (Menurun)" = "red",
+               "Positif (Meningkat)" = "darkgreen")
+  ) +
   ylim(min(coef_table_filtered$Estimate) - 0.2,
        max(coef_table_filtered$Estimate) + 0.2) +
   labs(
     title = "Faktor Penentu Tingkat Pengangguran Terbuka",
-    y = "Kekuatan Pengaruh (Estimate)",
-    x = "Variable",
-    fill = "Arah Pengaruh"
+    y     = "Kekuatan Pengaruh (Estimate)",
+    x     = "Variable",
+    fill  = "Arah Pengaruh"
   ) +
   theme_minimal() +
   theme(
     legend.position = "bottom",
     axis.text.y = element_text(size = 8, face = "bold")
   )
+
+
 
 
